@@ -1,0 +1,1836 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>When is the Next Drupal Meetup?</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+
+        <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600">
+
+        <link href="/assets/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.2/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin=""/>
+
+        <link rel="preconnect" href="https://www.google-analytics.com">
+
+        <link href="/assets/style.css?v=1049792758" rel="stylesheet" type="text/css" />
+</head>
+
+    <body>
+        <div id="head" class="text-center pt-4 pb-4">
+            <h1>
+    <a href="/">
+        When is the Next <strong>PHP Meetup</strong>?
+        🐘
+    </a>
+</h1>
+
+<p>
+    Crawling <a href="/groups/">1080 PHP groups</a> daily for next 30 days
+</p>
+        </div>
+
+        <div class="container-fluid" id="content">
+            <div class="row">
+                <div class="col-md-12 pb-5 pt-4">
+                    
+
+<div class="row mb-4 text-center">
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="/" class="btn btn-outline-danger ml-3 ">
+            293
+            in PHP
+        </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="/wordpress/" class="btn btn-outline-primary ml-3 ">
+            112
+            in WordPress
+        </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="/drupal/" class="btn btn-outline-info ml-3  active">
+            49
+            in Drupal
+        </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="/api/meetups.json" class="btn btn-light">Meetups JSON</a>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="/api/groups.json" class="btn btn-light">Groups JSON</a>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="https://travis-ci.org/TomasVotruba/friendsofphp.org" class="btn btn-light">
+            2019-09-04 CET
+        </a>
+    </div>
+</div>
+
+<a name="map"></a>
+
+<div id="mapid" class="mr-4"></div>
+
+<br>
+
+<script src="/assets/js/utils.js?v=1103903611"></script>
+
+<div id="table"></div>
+
+<table class="table table-bordered table-responsive" id="table-meetups">
+    <thead class="thead-inverse">
+        <tr>
+            <th class="w-25 text-center">
+                📅
+                &nbsp;
+                <span class="hidden-sm-down">When</span>
+            </th>
+            <th class="w-25 text-center">
+                📍
+
+                <span class="hidden-sm-down">Where</span>
+            </th>
+            <th class="w-50 text-center">
+                <span class="hidden-sm-down">Meetup</span>
+            </th>
+        </tr>
+    </thead>
+    <tr id="block-zoomout">
+        <td colspan="3" class="text-center">
+            No meetups in this area. Try to zoom out a bit!
+        </td>
+    </tr>
+
+            
+                            <tr class="meetup" data-longitude="-1.2619060277939" data-latitude="51.752159118652" data-datetime="2019-09-04 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 04</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Oxford
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/oxduguk/events/rrwlxqyzmbgb/">Monthly OXDUG - meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Oxford Drupal Users&#039; Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-8.6283273696899" data-latitude="52.664402008057" data-datetime="2019-09-04 20:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 04</nobr>
+                    <br>
+                    <small class="text-secondary">20:00</small>
+                </td>
+                <td class="w-25">
+                    Limerick
+                    <br>
+                    <small class="text-secondary">Ireland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-limerick/events/rflmnpyzmbgb/">Drupal Limerick Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Limerick</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="11.607309341431" data-latitude="48.124423980713" data-datetime="2019-09-05 09:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 05</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    München
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Munchen-Drupal-User-Group-Meetup/events/tcdgfqyzmbhb/">Drupal Coworking Day</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">München Drupal User Group Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="27.537929534912" data-latitude="53.898487091064" data-datetime="2019-09-05 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 05</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Minsk
+                    <br>
+                    <small class="text-secondary">Belarus</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-minsk/events/263353162/">September meetup &amp; Drupal Community BBQ (#7)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal User Group Minsk</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="8.5129289627075" data-latitude="47.39217376709" data-datetime="2019-09-05 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 05</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Zürich
+                    <br>
+                    <small class="text-secondary">Switzerland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Zurich-Drupal-Meetup/events/263563273/">Zurich Drupal Meetup September 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Zurich Drupal User Group Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="23.620622634888" data-latitude="46.776401519775" data-datetime="2019-09-05 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 05</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Cluj-Napoca
+                    <br>
+                    <small class="text-secondary">Romania</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Drupal-Cluj/events/krpgsmyzmbhb/">Drupal Cluj Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Cluj</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="13.419786453247" data-latitude="52.500328063965" data-datetime="2019-09-05 19:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 05</nobr>
+                    <br>
+                    <small class="text-secondary">19:30</small>
+                </td>
+                <td class="w-25">
+                    Berlin
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Drupal-User-Group-Berlin/events/spjnxqyzmbhb/">Treffen der Drupal User Group Berlin</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal User Group Berlin</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="153.02293395996" data-latitude="-27.470411300659" data-datetime="2019-09-06 09:30">
+                <td class="w-25">
+                    <nobr>Fri, Sep 06</nobr>
+                    <br>
+                    <small class="text-secondary">09:30</small>
+                </td>
+                <td class="w-25">
+                    Brisbane
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Drupal-Brisbane/events/262991729/">Creating webforms in Drupal 8 (part of Drupal Global Training Day)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Brisbane</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="80.247169494629" data-latitude="12.956654548645" data-datetime="2019-09-07 10:30">
+                <td class="w-25">
+                    <nobr>Sat, Sep 07</nobr>
+                    <br>
+                    <small class="text-secondary">10:30</small>
+                </td>
+                <td class="w-25">
+                    Chennai 
+                    <br>
+                    <small class="text-secondary">India</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Chennai-Drupal-Meetup/events/264518203/">Drupal Camp Chennai 2019 - Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Chennai Drupal Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="46.6399269104" data-latitude="24.737899780273" data-datetime="2019-09-08 18:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 08</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Riyadh
+                    <br>
+                    <small class="text-secondary">Saudi Arabia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-sa/events/pfxlhryzmblb/">Sundays (Weekly meeting)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">دروبال السعودية - Drupal</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="153.02499389648" data-latitude="-27.466512680054" data-datetime="2019-09-10 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Brisbane City
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Drupal-Brisbane/events/rwrnwqyzmbnb/">Drupal Brisbane Meetup: Call for papers</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Brisbane</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-118.43887329102" data-latitude="34.039169311523" data-datetime="2019-09-10 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Los Angeles
+                    <br>
+                    <small class="text-secondary">California</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/ladrupal/events/lxlmxqyzmbnb/">LA Drupal monthly meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Los Angeles Drupal</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-87.625694274902" data-latitude="41.882667541504" data-datetime="2019-09-11 11:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 11</nobr>
+                    <br>
+                    <small class="text-secondary">11:30</small>
+                </td>
+                <td class="w-25">
+                    Chicago
+                    <br>
+                    <small class="text-secondary">Illinois</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupalchicago/events/bltlfryzmbpb/">Chicago Drupal Lunch</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Chicago</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-81.515754699707" data-latitude="27.664827346802" data-datetime="2019-09-11 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 11</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Anytown
+                    <br>
+                    <small class="text-secondary">Florida</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/broward-drupal/events/ggmbsqyzmbpb/">Call for presenters</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Broward Drupal Users Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-111.87606811523" data-latitude="40.767639160156" data-datetime="2019-09-12 12:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 12</nobr>
+                    <br>
+                    <small class="text-secondary">12:00</small>
+                </td>
+                <td class="w-25">
+                    Salt Lake City
+                    <br>
+                    <small class="text-secondary">Utah</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Utah-Drupal-Users-Group/events/dqnggryzmbqb/">Lunch Time Drupal Users Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Utah Drupal Users Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="4.4919319152832" data-latitude="52.164211273193" data-datetime="2019-09-12 17:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 12</nobr>
+                    <br>
+                    <small class="text-secondary">17:30</small>
+                </td>
+                <td class="w-25">
+                    Leiden
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupalnl/events/261926043/">Drupal Tech Talk 28: Where would we be without API&#039;s?</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Nederland</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="7.218593120575" data-latitude="51.472438812256" data-datetime="2019-09-12 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 12</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Bochum
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-ruhr/events/gkwrjqyzmbqb/">Treffen von Drupal-Interessenten</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">drupal.ruhr</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="4.9021100997925" data-latitude="52.35387802124" data-datetime="2019-09-13 09:30">
+                <td class="w-25">
+                    <nobr>Fri, Sep 13</nobr>
+                    <br>
+                    <small class="text-secondary">09:30</small>
+                </td>
+                <td class="w-25">
+                    Amsterdam
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Drupal-Amsterdam/events/dgvmpgyzmbrb/">DrupalAmsterdam Coworking (Second Friday /month)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Amsterdam</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-74.063507080078" data-latitude="4.6805877685547" data-datetime="2019-09-14 09:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    Bogotá
+                    <br>
+                    <small class="text-secondary">Colombia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Bogota-Drupal-Meetup/events/264400619/">Bases CMS Desacoplado y Testing | Drupal 8</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Bogotá Drupal Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="46.6399269104" data-latitude="24.737899780273" data-datetime="2019-09-15 18:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 15</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Riyadh
+                    <br>
+                    <small class="text-secondary">Saudi Arabia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-sa/events/pfxlhryzmbtb/">Sundays (Weekly meeting)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">دروبال السعودية - Drupal</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-71.409721374512" data-latitude="41.820285797119" data-datetime="2019-09-17 18:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Providence
+                    <br>
+                    <small class="text-secondary">Rhode Island</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/DrupalPVD/events/258764253/">Drupal Contribution Night</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Providence</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-77.306968688965" data-latitude="38.876598358154" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Fairfax
+                    <br>
+                    <small class="text-secondary">Virginia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-dc/events/264505001/">Drupal NoVA: Migration, Migration, Migration</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">DC Area Drupal Meetup Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="153.41116333008" data-latitude="-28.080526351929" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Varsity Lakes
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupalgoldcoast/events/rdjdvqyzmbwb/">Drupal Gold Coast Monthly Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Gold Coast</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-87.625694274902" data-latitude="41.882667541504" data-datetime="2019-09-18 11:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">11:30</small>
+                </td>
+                <td class="w-25">
+                    Chicago
+                    <br>
+                    <small class="text-secondary">Illinois</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupalchicago/events/bltlfryzmbxb/">Chicago Drupal Lunch</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Chicago</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-81.594360351562" data-latitude="30.333358764648" data-datetime="2019-09-18 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Jacksonville
+                    <br>
+                    <small class="text-secondary">Florida</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/JaxPHP-JaxWeb/events/hvcwcryzmbxb/">Jax PHP/Web/Drupal meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Jax PHP/Web/Drupal</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-88.306671142578" data-latitude="41.888069152832" data-datetime="2019-09-18 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Geneva
+                    <br>
+                    <small class="text-secondary">Illinois</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Fox-Valley-Drupal/events/wclcbryzmbpb/">FV Drupal  3rd Wednesday of month ***** UNDER CONSTRUCTION *****</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Fox Valley Drupal</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-76.593681335449" data-latitude="39.282623291016" data-datetime="2019-09-18 18:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Baltimore
+                    <br>
+                    <small class="text-secondary">Maryland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Baltimore-Drupal-Meetup/events/dhjccryzmbxb/">Baltimore Drupal Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Baltimore Drupal Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-88.245323181152" data-latitude="40.09391784668" data-datetime="2019-09-18 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Champaign
+                    <br>
+                    <small class="text-secondary">Illinois</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Central-Illinois-Drupal-Meetup/events/264018624/">Central Illinois Drupal User Group: Sept 2019 (guest speaker Mathieu Spillebeen)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Central Illinois Drupal Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="11.552869796753" data-latitude="48.137691497803" data-datetime="2019-09-18 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    München
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Munchen-Drupal-User-Group-Meetup/events/qzjdvqyzmbxb/">Drupal Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">München Drupal User Group Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-81.24927520752" data-latitude="42.981178283691" data-datetime="2019-09-19 12:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">12:00</small>
+                </td>
+                <td class="w-25">
+                    London
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/londug/events/263268042/">Patch 101: Making Drupal Better</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">London Ontario Drupal Users Group (LonDUG)</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-1.5468389987946" data-latitude="53.795093536377" data-datetime="2019-09-19 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Leeds, LS1 4JB
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/DrupalYorkshire/events/zwzsfpyzmbzb/">Drupal Yorkshire Monthly Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Yorkshire Monthly Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="4.8714737892151" data-latitude="51.180511474609" data-datetime="2019-09-19 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Herentals
+                    <br>
+                    <small class="text-secondary">Belgium</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/DUG-BE/events/262701582/">DUG: Pattern Lab, Bootstrap and choosing a testing framework</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Belgium</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="23.325246810913" data-latitude="42.707710266113" data-datetime="2019-09-19 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Sofia
+                    <br>
+                    <small class="text-secondary">Bulgaria</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Bulgaria-Drupal-User-Group/events/fwzbgqyzmbzb/">Drupal UG Monthly Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Bulgaria Drupal User Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="19.053094863892" data-latitude="47.511627197266" data-datetime="2019-09-21 09:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    Budapest
+                    <br>
+                    <small class="text-secondary">Hungary</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Budapest-Drupal-User-Group/events/263593039/">Drupal Hétvége 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Budapest Drupal User Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="46.6399269104" data-latitude="24.737899780273" data-datetime="2019-09-22 18:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 22</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Riyadh
+                    <br>
+                    <small class="text-secondary">Saudi Arabia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-sa/events/pfxlhryzmbdc/">Sundays (Weekly meeting)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">دروبال السعودية - Drupal</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-104.9927444458" data-latitude="39.733734130859" data-datetime="2019-09-24 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Denver
+                    <br>
+                    <small class="text-secondary">Colorado</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-colorado/events/kksfcryzmbgc/">The Denver Drupal Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Colorado Drupal Meetups</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-87.625694274902" data-latitude="41.882667541504" data-datetime="2019-09-25 11:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">11:30</small>
+                </td>
+                <td class="w-25">
+                    Chicago
+                    <br>
+                    <small class="text-secondary">Illinois</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupalchicago/events/bltlfryzmbhc/">Chicago Drupal Lunch</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Chicago</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-87.653045654297" data-latitude="41.921566009521" data-datetime="2019-09-25 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Chicago
+                    <br>
+                    <small class="text-secondary">Illinois</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupalchicago/events/264541760/">O&#039;MidCamp 2020 Social</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Chicago</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-6.2489881515503" data-latitude="53.338466644287" data-datetime="2019-09-25 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Dublin
+                    <br>
+                    <small class="text-secondary">Ireland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Drupal-Ireland/events/kqvfdqyzmbhc/">Drupal Dublin Monthly Meet up</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Ireland</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-78.902153015137" data-latitude="35.995601654053" data-datetime="2019-09-26 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Durham
+                    <br>
+                    <small class="text-secondary">North Carolina</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/triDUG/events/twctrlyzmbjc/">Triangle Drupal Meetup Fall Social</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Triangle Drupal Users&#039; Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-1.5722229480743" data-latitude="47.207454681396" data-datetime="2019-09-26 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Nantes
+                    <br>
+                    <small class="text-secondary">France</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-france-francophonie/events/264053597/">Meetup contrib Nantes le 26 septembre 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal France et Francophonie</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="8.4308242797852" data-latitude="49.005317687988" data-datetime="2019-09-26 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Karlsruhe
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Drupal-Karlsruhe/events/ftnlwqyzmbjc/">Triff die Drupal Community in Karlsruhe</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Karlsruhe</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="46.6399269104" data-latitude="24.737899780273" data-datetime="2019-09-29 18:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 29</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Riyadh
+                    <br>
+                    <small class="text-secondary">Saudi Arabia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-sa/events/pfxlhryzmbmc/">Sundays (Weekly meeting)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">دروبال السعودية - Drupal</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="174.77421569824" data-latitude="-41.289779663086" data-datetime="2019-10-01 18:00">
+                <td class="w-25">
+                    <nobr>Tue, Oct 01</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Wellington
+                    <br>
+                    <small class="text-secondary">New Zealand</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Wellington-Drupal-Meetup/events/261605808/">Drupal Professional Development - Learn Stuff!</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Wellington Drupal Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-77.042198181152" data-latitude="38.908958435059" data-datetime="2019-10-01 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Oct 01</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Washington
+                    <br>
+                    <small class="text-secondary">District Of Columbia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-dc/events/262037440/">October Monthly Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">DC Area Drupal Meetup Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-1.2619060277939" data-latitude="51.752159118652" data-datetime="2019-10-02 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Oct 02</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Oxford
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/oxduguk/events/rrwlxqyznbdb/">Monthly OXDUG - meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Oxford Drupal Users&#039; Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-8.6283273696899" data-latitude="52.664402008057" data-datetime="2019-10-02 20:00">
+                <td class="w-25">
+                    <nobr>Wed, Oct 02</nobr>
+                    <br>
+                    <small class="text-secondary">20:00</small>
+                </td>
+                <td class="w-25">
+                    Limerick
+                    <br>
+                    <small class="text-secondary">Ireland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/drupal-limerick/events/rflmnpyznbdb/">Drupal Limerick Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal Limerick</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="11.607309341431" data-latitude="48.124423980713" data-datetime="2019-10-03 09:00">
+                <td class="w-25">
+                    <nobr>Thu, Oct 03</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    München
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Munchen-Drupal-User-Group-Meetup/events/tcdgfqyznbfb/">Drupal Coworking Day</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">München Drupal User Group Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="13.419786453247" data-latitude="52.500328063965" data-datetime="2019-10-03 19:30">
+                <td class="w-25">
+                    <nobr>Thu, Oct 03</nobr>
+                    <br>
+                    <small class="text-secondary">19:30</small>
+                </td>
+                <td class="w-25">
+                    Berlin
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Drupal-User-Group-Berlin/events/spjnxqyznbfb/">Treffen der Drupal User Group Berlin</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Drupal User Group Berlin</small>
+                </td>
+            </tr>
+            </table>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+<script src="/assets/js/menu-area-pick.js?v=1808304145"></script>
+
+<script src="https://unpkg.com/leaflet@1.3.2/dist/leaflet.js"
+        integrity="sha512-2fA79E27MOeBgLjmBrtAgM/20clVSV8vJERaW/EcnnWCVGwQRazzKtQS1kIusCZv1PtaQxosDZZ0F1Oastl55w=="
+        crossorigin=""></script>
+
+<script type="text/javascript">
+    var icons = {
+        // pick from: https://github.com/pointhi/leaflet-color-markers
+        green: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
+        orange: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png',
+        red: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png'
+    };
+
+    var markers = [
+        
+        {
+                        "type": "green",
+                        "title": "Monthly OXDUG - meetup",
+                        "position": [51.752159118652, -1.2619060277939],
+                        "date": "09-04",
+                        "location": "Oxford",
+                        "url": "https://www.meetup.com/oxduguk/events/rrwlxqyzmbgb/",
+                        // for filtering
+                        "datetime": "2019-09-04 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Drupal Limerick Meetup",
+                        "position": [52.664402008057, -8.6283273696899],
+                        "date": "09-04",
+                        "location": "Limerick",
+                        "url": "https://www.meetup.com/drupal-limerick/events/rflmnpyzmbgb/",
+                        // for filtering
+                        "datetime": "2019-09-04 20:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Drupal Coworking Day",
+                        "position": [48.124423980713, 11.607309341431],
+                        "date": "09-05",
+                        "location": "München",
+                        "url": "https://www.meetup.com/Munchen-Drupal-User-Group-Meetup/events/tcdgfqyzmbhb/",
+                        // for filtering
+                        "datetime": "2019-09-05 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "September meetup &amp; Drupal Community BBQ (#7)",
+                        "position": [53.898487091064, 27.537929534912],
+                        "date": "09-05",
+                        "location": "Minsk",
+                        "url": "https://www.meetup.com/drupal-minsk/events/263353162/",
+                        // for filtering
+                        "datetime": "2019-09-05 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Zurich Drupal Meetup September 2019",
+                        "position": [47.39217376709, 8.5129289627075],
+                        "date": "09-05",
+                        "location": "Zürich",
+                        "url": "https://www.meetup.com/Zurich-Drupal-Meetup/events/263563273/",
+                        // for filtering
+                        "datetime": "2019-09-05 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Drupal Cluj Meetup",
+                        "position": [46.776401519775, 23.620622634888],
+                        "date": "09-05",
+                        "location": "Cluj-Napoca",
+                        "url": "https://www.meetup.com/Drupal-Cluj/events/krpgsmyzmbhb/",
+                        // for filtering
+                        "datetime": "2019-09-05 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Treffen der Drupal User Group Berlin",
+                        "position": [52.500328063965, 13.419786453247],
+                        "date": "09-05",
+                        "location": "Berlin",
+                        "url": "https://www.meetup.com/Drupal-User-Group-Berlin/events/spjnxqyzmbhb/",
+                        // for filtering
+                        "datetime": "2019-09-05 19:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Creating webforms in Drupal 8 (part of Drupal Global Training Day)",
+                        "position": [-27.470411300659, 153.02293395996],
+                        "date": "09-06",
+                        "location": "Brisbane",
+                        "url": "https://www.meetup.com/Drupal-Brisbane/events/262991729/",
+                        // for filtering
+                        "datetime": "2019-09-06 09:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Drupal Camp Chennai 2019 - Meetup",
+                        "position": [12.956654548645, 80.247169494629],
+                        "date": "09-07",
+                        "location": "Chennai ",
+                        "url": "https://www.meetup.com/Chennai-Drupal-Meetup/events/264518203/",
+                        // for filtering
+                        "datetime": "2019-09-07 10:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Sundays (Weekly meeting)",
+                        "position": [24.737899780273, 46.6399269104],
+                        "date": "09-08",
+                        "location": "Riyadh",
+                        "url": "https://www.meetup.com/drupal-sa/events/pfxlhryzmblb/",
+                        // for filtering
+                        "datetime": "2019-09-08 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Drupal Brisbane Meetup: Call for papers",
+                        "position": [-27.466512680054, 153.02499389648],
+                        "date": "09-10",
+                        "location": "Brisbane City",
+                        "url": "https://www.meetup.com/Drupal-Brisbane/events/rwrnwqyzmbnb/",
+                        // for filtering
+                        "datetime": "2019-09-10 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "LA Drupal monthly meetup",
+                        "position": [34.039169311523, -118.43887329102],
+                        "date": "09-10",
+                        "location": "Los Angeles",
+                        "url": "https://www.meetup.com/ladrupal/events/lxlmxqyzmbnb/",
+                        // for filtering
+                        "datetime": "2019-09-10 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Chicago Drupal Lunch",
+                        "position": [41.882667541504, -87.625694274902],
+                        "date": "09-11",
+                        "location": "Chicago",
+                        "url": "https://www.meetup.com/drupalchicago/events/bltlfryzmbpb/",
+                        // for filtering
+                        "datetime": "2019-09-11 11:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Call for presenters",
+                        "position": [27.664827346802, -81.515754699707],
+                        "date": "09-11",
+                        "location": "Anytown",
+                        "url": "https://www.meetup.com/broward-drupal/events/ggmbsqyzmbpb/",
+                        // for filtering
+                        "datetime": "2019-09-11 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Lunch Time Drupal Users Meetup",
+                        "position": [40.767639160156, -111.87606811523],
+                        "date": "09-12",
+                        "location": "Salt Lake City",
+                        "url": "https://www.meetup.com/Utah-Drupal-Users-Group/events/dqnggryzmbqb/",
+                        // for filtering
+                        "datetime": "2019-09-12 12:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Drupal Tech Talk 28: Where would we be without API&#039;s?",
+                        "position": [52.164211273193, 4.4919319152832],
+                        "date": "09-12",
+                        "location": "Leiden",
+                        "url": "https://www.meetup.com/drupalnl/events/261926043/",
+                        // for filtering
+                        "datetime": "2019-09-12 17:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Treffen von Drupal-Interessenten",
+                        "position": [51.472438812256, 7.218593120575],
+                        "date": "09-12",
+                        "location": "Bochum",
+                        "url": "https://www.meetup.com/drupal-ruhr/events/gkwrjqyzmbqb/",
+                        // for filtering
+                        "datetime": "2019-09-12 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "DrupalAmsterdam Coworking (Second Friday /month)",
+                        "position": [52.35387802124, 4.9021100997925],
+                        "date": "09-13",
+                        "location": "Amsterdam",
+                        "url": "https://www.meetup.com/Drupal-Amsterdam/events/dgvmpgyzmbrb/",
+                        // for filtering
+                        "datetime": "2019-09-13 09:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Bases CMS Desacoplado y Testing | Drupal 8",
+                        "position": [4.6805877685547, -74.063507080078],
+                        "date": "09-14",
+                        "location": "Bogotá",
+                        "url": "https://www.meetup.com/Bogota-Drupal-Meetup/events/264400619/",
+                        // for filtering
+                        "datetime": "2019-09-14 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Sundays (Weekly meeting)",
+                        "position": [24.737899780273, 46.6399269104],
+                        "date": "09-15",
+                        "location": "Riyadh",
+                        "url": "https://www.meetup.com/drupal-sa/events/pfxlhryzmbtb/",
+                        // for filtering
+                        "datetime": "2019-09-15 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Drupal Contribution Night",
+                        "position": [41.820285797119, -71.409721374512],
+                        "date": "09-17",
+                        "location": "Providence",
+                        "url": "https://www.meetup.com/DrupalPVD/events/258764253/",
+                        // for filtering
+                        "datetime": "2019-09-17 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Drupal NoVA: Migration, Migration, Migration",
+                        "position": [38.876598358154, -77.306968688965],
+                        "date": "09-17",
+                        "location": "Fairfax",
+                        "url": "https://www.meetup.com/drupal-dc/events/264505001/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Drupal Gold Coast Monthly Meetup",
+                        "position": [-28.080526351929, 153.41116333008],
+                        "date": "09-17",
+                        "location": "Varsity Lakes",
+                        "url": "https://www.meetup.com/drupalgoldcoast/events/rdjdvqyzmbwb/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Chicago Drupal Lunch",
+                        "position": [41.882667541504, -87.625694274902],
+                        "date": "09-18",
+                        "location": "Chicago",
+                        "url": "https://www.meetup.com/drupalchicago/events/bltlfryzmbxb/",
+                        // for filtering
+                        "datetime": "2019-09-18 11:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Jax PHP/Web/Drupal meetup",
+                        "position": [30.333358764648, -81.594360351562],
+                        "date": "09-18",
+                        "location": "Jacksonville",
+                        "url": "https://www.meetup.com/JaxPHP-JaxWeb/events/hvcwcryzmbxb/",
+                        // for filtering
+                        "datetime": "2019-09-18 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "FV Drupal  3rd Wednesday of month ***** UNDER CONSTRUCTION *****",
+                        "position": [41.888069152832, -88.306671142578],
+                        "date": "09-18",
+                        "location": "Geneva",
+                        "url": "https://www.meetup.com/Fox-Valley-Drupal/events/wclcbryzmbpb/",
+                        // for filtering
+                        "datetime": "2019-09-18 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Baltimore Drupal Meetup",
+                        "position": [39.282623291016, -76.593681335449],
+                        "date": "09-18",
+                        "location": "Baltimore",
+                        "url": "https://www.meetup.com/Baltimore-Drupal-Meetup/events/dhjccryzmbxb/",
+                        // for filtering
+                        "datetime": "2019-09-18 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Central Illinois Drupal User Group: Sept 2019 (guest speaker Mathieu Spillebeen)",
+                        "position": [40.09391784668, -88.245323181152],
+                        "date": "09-18",
+                        "location": "Champaign",
+                        "url": "https://www.meetup.com/Central-Illinois-Drupal-Meetup/events/264018624/",
+                        // for filtering
+                        "datetime": "2019-09-18 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Drupal Meetup",
+                        "position": [48.137691497803, 11.552869796753],
+                        "date": "09-18",
+                        "location": "München",
+                        "url": "https://www.meetup.com/Munchen-Drupal-User-Group-Meetup/events/qzjdvqyzmbxb/",
+                        // for filtering
+                        "datetime": "2019-09-18 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Patch 101: Making Drupal Better",
+                        "position": [42.981178283691, -81.24927520752],
+                        "date": "09-19",
+                        "location": "London",
+                        "url": "https://www.meetup.com/londug/events/263268042/",
+                        // for filtering
+                        "datetime": "2019-09-19 12:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Drupal Yorkshire Monthly Meetup",
+                        "position": [53.795093536377, -1.5468389987946],
+                        "date": "09-19",
+                        "location": "Leeds, LS1 4JB",
+                        "url": "https://www.meetup.com/DrupalYorkshire/events/zwzsfpyzmbzb/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "DUG: Pattern Lab, Bootstrap and choosing a testing framework",
+                        "position": [51.180511474609, 4.8714737892151],
+                        "date": "09-19",
+                        "location": "Herentals",
+                        "url": "https://www.meetup.com/DUG-BE/events/262701582/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Drupal UG Monthly Meetup",
+                        "position": [42.707710266113, 23.325246810913],
+                        "date": "09-19",
+                        "location": "Sofia",
+                        "url": "https://www.meetup.com/Bulgaria-Drupal-User-Group/events/fwzbgqyzmbzb/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Drupal Hétvége 2019",
+                        "position": [47.511627197266, 19.053094863892],
+                        "date": "09-21",
+                        "location": "Budapest",
+                        "url": "https://www.meetup.com/Budapest-Drupal-User-Group/events/263593039/",
+                        // for filtering
+                        "datetime": "2019-09-21 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Sundays (Weekly meeting)",
+                        "position": [24.737899780273, 46.6399269104],
+                        "date": "09-22",
+                        "location": "Riyadh",
+                        "url": "https://www.meetup.com/drupal-sa/events/pfxlhryzmbdc/",
+                        // for filtering
+                        "datetime": "2019-09-22 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "The Denver Drupal Meetup",
+                        "position": [39.733734130859, -104.9927444458],
+                        "date": "09-24",
+                        "location": "Denver",
+                        "url": "https://www.meetup.com/drupal-colorado/events/kksfcryzmbgc/",
+                        // for filtering
+                        "datetime": "2019-09-24 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Chicago Drupal Lunch",
+                        "position": [41.882667541504, -87.625694274902],
+                        "date": "09-25",
+                        "location": "Chicago",
+                        "url": "https://www.meetup.com/drupalchicago/events/bltlfryzmbhc/",
+                        // for filtering
+                        "datetime": "2019-09-25 11:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "O&#039;MidCamp 2020 Social",
+                        "position": [41.921566009521, -87.653045654297],
+                        "date": "09-25",
+                        "location": "Chicago",
+                        "url": "https://www.meetup.com/drupalchicago/events/264541760/",
+                        // for filtering
+                        "datetime": "2019-09-25 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Drupal Dublin Monthly Meet up",
+                        "position": [53.338466644287, -6.2489881515503],
+                        "date": "09-25",
+                        "location": "Dublin",
+                        "url": "https://www.meetup.com/Drupal-Ireland/events/kqvfdqyzmbhc/",
+                        // for filtering
+                        "datetime": "2019-09-25 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Triangle Drupal Meetup Fall Social",
+                        "position": [35.995601654053, -78.902153015137],
+                        "date": "09-26",
+                        "location": "Durham",
+                        "url": "https://www.meetup.com/triDUG/events/twctrlyzmbjc/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Meetup contrib Nantes le 26 septembre 2019",
+                        "position": [47.207454681396, -1.5722229480743],
+                        "date": "09-26",
+                        "location": "Nantes",
+                        "url": "https://www.meetup.com/drupal-france-francophonie/events/264053597/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Triff die Drupal Community in Karlsruhe",
+                        "position": [49.005317687988, 8.4308242797852],
+                        "date": "09-26",
+                        "location": "Karlsruhe",
+                        "url": "https://www.meetup.com/Drupal-Karlsruhe/events/ftnlwqyzmbjc/",
+                        // for filtering
+                        "datetime": "2019-09-26 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Sundays (Weekly meeting)",
+                        "position": [24.737899780273, 46.6399269104],
+                        "date": "09-29",
+                        "location": "Riyadh",
+                        "url": "https://www.meetup.com/drupal-sa/events/pfxlhryzmbmc/",
+                        // for filtering
+                        "datetime": "2019-09-29 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Drupal Professional Development - Learn Stuff!",
+                        "position": [-41.289779663086, 174.77421569824],
+                        "date": "10-01",
+                        "location": "Wellington",
+                        "url": "https://www.meetup.com/Wellington-Drupal-Meetup/events/261605808/",
+                        // for filtering
+                        "datetime": "2019-10-01 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "October Monthly Meetup",
+                        "position": [38.908958435059, -77.042198181152],
+                        "date": "10-01",
+                        "location": "Washington",
+                        "url": "https://www.meetup.com/drupal-dc/events/262037440/",
+                        // for filtering
+                        "datetime": "2019-10-01 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Monthly OXDUG - meetup",
+                        "position": [51.752159118652, -1.2619060277939],
+                        "date": "10-02",
+                        "location": "Oxford",
+                        "url": "https://www.meetup.com/oxduguk/events/rrwlxqyznbdb/",
+                        // for filtering
+                        "datetime": "2019-10-02 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Drupal Limerick Meetup",
+                        "position": [52.664402008057, -8.6283273696899],
+                        "date": "10-02",
+                        "location": "Limerick",
+                        "url": "https://www.meetup.com/drupal-limerick/events/rflmnpyznbdb/",
+                        // for filtering
+                        "datetime": "2019-10-02 20:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Drupal Coworking Day",
+                        "position": [48.124423980713, 11.607309341431],
+                        "date": "10-03",
+                        "location": "München",
+                        "url": "https://www.meetup.com/Munchen-Drupal-User-Group-Meetup/events/tcdgfqyznbfb/",
+                        // for filtering
+                        "datetime": "2019-10-03 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Treffen der Drupal User Group Berlin",
+                        "position": [52.500328063965, 13.419786453247],
+                        "date": "10-03",
+                        "location": "Berlin",
+                        "url": "https://www.meetup.com/Drupal-User-Group-Berlin/events/spjnxqyznbfb/",
+                        // for filtering
+                        "datetime": "2019-10-03 19:30",
+                    }
+    ];
+
+    var grouped = {};
+
+    var tresholdDate = new Date();
+    // go 2 hours in the future, so the running meetup is discoverable; e.g. when comming late like me :)
+    tresholdDate.setHours(tresholdDate.getHours() - 2);
+    var tresholdDateTime = Date.parse(tresholdDate);
+
+    for (var i in markers) {
+        var marker = markers[i];
+
+        // is in the past?
+        var meetupDateTime = Date.parse(marker.datetime);
+        if (meetupDateTime < tresholdDateTime) {
+            continue;
+        }
+
+        // group meetups in one location
+        if (typeof grouped[marker.location] == 'undefined') {
+            grouped[marker.location] = {
+                type: marker.type,
+                position: marker.position,
+                markers: []
+            };
+        }
+
+        grouped[marker.location].markers.push(marker);
+    }
+
+    var map = L.map('mapid');
+
+    // fit to bounds, so pc and mobile have same content
+    // https://leafletjs.com/reference-1.3.2.html#latlngbounds
+
+    // reconstruction from serialized object is not completely working, so we need to restore it manually
+    var restoreBoundFromString = function(stringBound) {
+        stringBound = stringBound.replace(/%22/g, '"');
+        pastBounds = JSON.parse(stringBound);
+
+        return L.latLngBounds(
+            L.latLng(pastBounds._northEast.lat, pastBounds._northEast.lng),
+            L.latLng(pastBounds._southWest.lat, pastBounds._southWest.lng)
+        );
+    };
+
+    // get url bounds
+    var pastBounds = window.localStorage.getItem('bounds');
+
+    // @see https://stackoverflow.com/a/36444134/1348344
+    var isRefreshed = performance.navigation.type;
+
+    if (get('bounds') && isRefreshed === 0)  {
+        var boundsAsString = get('bounds');
+
+        map.fitBounds(restoreBoundFromString(boundsAsString));
+    } else if (pastBounds) {
+        map.fitBounds(restoreBoundFromString(pastBounds));
+    } else {
+        // default map - the whole world
+        map.setView([25, 0], 2);
+    }
+
+    // ref https://github.com/php-ug/php.ug/issues/221#issuecomment-437917289
+    var restoreDislocation = function(map) {
+        var currentCenter = map.getCenter();
+        if (currentCenter.lng > 300 || currentCenter.lng < -300) {
+            // default map - the whole world
+            alert('Whoa, you fell of the main map! Lets get back to center.');
+            map.setView([25, 0], 2);
+        }
+    };
+
+    restoreDislocation(map);
+
+
+    // store past location when map mooves
+    map.on('moveend', function(e) {
+        var bounds = map.getBounds();
+        // objects needs to serialize, since only string can be saved: https://stackoverflow.com/a/2010948/1348344
+        restoreDislocation(map);
+
+        var boundsAsString = boundsToString(bounds);
+        window.localStorage.setItem('bounds', boundsAsString);
+    });
+
+    // required and nice to have promotion to great tool
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // @see https://stackoverflow.com/a/1199420/1348344
+    String.prototype.truncate = String.prototype.truncate ||
+        function(n){
+            return (this.length > n) ? this.substr(0, n-1) + '&hellip;' : this;
+        };
+
+    for (var i in grouped) {
+        var group = grouped[i];
+
+        let [first] = group.markers;
+        var description = '<div class="text-center mb-3" style="width:450px">📍&nbsp;&nbsp;'
+            + first.location
+            + "</div>";
+
+        for (var j in group.markers) {
+            marker = group.markers[j];
+
+            var url = '<a class="text-bold block text-primary ml-3" href="' + marker.url + '" target="_blank" rel="noreferrer noopener"><strong>' + marker.title.truncate(38) + '</strong></a>';
+
+            description += '<div class="mb-3">'
+                + '📅&nbsp; ' + marker.date
+                + url + '</div>'
+            ;
+        }
+
+        var icon = new L.Icon({
+            iconUrl: icons[group.type],
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34]
+        });
+
+        // width: @see https://stackoverflow.com/a/38007764/1348344
+        L.marker(group.position, { icon: icon }).addTo(map).bindPopup(description, {
+            maxWidth: 450
+        });
+    }
+</script>
+                </div>
+            </div>
+        </div>
+
+        <footer class="pb-5 pt-5 mt-5">
+    <div class="container-fluid">
+        <blockquote class="blockquote text-bigger text-center mb-5">
+            "Meeting people from other countries brings <strong>fresh energy to your coding</strong>,
+            <br>new ideas and valuable feedback."
+        </blockquote>
+
+        <br>
+
+        <h3>How This Works?</h3>
+
+        <p>
+            This website is <strong>regenerated by <a href="https://github.com/TomasVotruba/friendsofphp.org/blob/9de36089966f32a79a3789cba0288a55c0f24ffd/.travis.yml#L28">Travis Cron</a> to <a href="https://github.com/tomasvotruba/friendsofphp.org">Github Pages</a> every 24 hours</strong>, so meetups are always fresh.
+        </p>
+
+        <p>
+            We show <strong>meetups for next 30 days</strong>, so you can <a href="https://www.tomasvotruba.cz/blog/2018/07/23/5-signs-should-never-have-a-talk-abroad/">pick up where to go speak</a> or talks with friends right away.
+        </p>
+
+        <hr class="mt-5 mb-5">
+
+        <p class="text-center">
+            <a href="/groups/" class="btn btn-warning btn-lg">Did we Forget Your Group?</a>
+        </p>
+
+        <br>
+
+        <div class="text-center pt-5">
+            <p class="dim">
+                Made with ❤️ on️ <a href="https://www.statie.org">Statie</a> by ️☕️ and <a href="https://tomasvotruba.com">Tomas Votruba</a>
+                <br>
+                Check <a href="https://github.com/tomasvotruba/friendsofphp.org">the repository on Github</a>
+            </p>
+        </div>
+    </div>
+</footer>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122522291-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122522291-1');
+</script>
+    </body>
+</html>

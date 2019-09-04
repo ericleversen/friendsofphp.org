@@ -1,0 +1,3788 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>When is the NextWordPress Meetup?</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+
+        <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600">
+
+        <link href="/assets/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.2/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin=""/>
+
+        <link rel="preconnect" href="https://www.google-analytics.com">
+
+        <link href="/assets/style.css?v=1692179088" rel="stylesheet" type="text/css" />
+</head>
+
+    <body>
+        <div id="head" class="text-center pt-4 pb-4">
+            <h1>
+    <a href="/">
+        When is the Next <strong>PHP Meetup</strong>?
+        🐘
+    </a>
+</h1>
+
+<p>
+    Crawling <a href="/groups/">1080 PHP groups</a> daily for next 30 days
+</p>
+        </div>
+
+        <div class="container-fluid" id="content">
+            <div class="row">
+                <div class="col-md-12 pb-5 pt-4">
+                    
+
+<div class="row mb-4 text-center">
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="/" class="btn btn-outline-danger ml-3 ">
+            293
+            in PHP
+        </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="/wordpress/" class="btn btn-outline-primary ml-3  active">
+            112
+            in WordPress
+        </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="/drupal/" class="btn btn-outline-info ml-3 ">
+            49
+            in Drupal
+        </a>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="/api/meetups.json" class="btn btn-light">Meetups JSON</a>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="/api/groups.json" class="btn btn-light">Groups JSON</a>
+    </div>
+    <div class="col-6 col-sm-4 col-md-2">
+        <a href="https://travis-ci.org/TomasVotruba/friendsofphp.org" class="btn btn-light">
+            2019-09-04 CET
+        </a>
+    </div>
+</div>
+
+<a name="map"></a>
+<div id="mapid" class="mr-4"></div>
+
+<br>
+
+<script src="/assets/js/utils.js?v=684616670"></script>
+
+<div id="table"></div>
+
+<table class="table table-bordered table-responsive" id="table-meetups">
+    <thead class="thead-inverse">
+        <tr>
+            <th class="w-25 text-center">
+                📅
+                &nbsp;
+                <span class="hidden-sm-down">When</span>
+            </th>
+            <th class="w-25 text-center">
+                📍
+
+                <span class="hidden-sm-down">Where</span>
+            </th>
+            <th class="w-50 text-center">
+                <span class="hidden-sm-down">Meetup</span>
+            </th>
+        </tr>
+    </thead>
+    <tr id="block-zoomout">
+        <td colspan="3" class="text-center">
+            No meetups in this area. Try to zoom out a bit!
+        </td>
+    </tr>
+
+            
+                            <tr class="meetup" data-longitude="24.931610107422" data-latitude="60.170547485352" data-datetime="2019-09-04 17:15">
+                <td class="w-25">
+                    <nobr>Wed, Sep 04</nobr>
+                    <br>
+                    <small class="text-secondary">17:15</small>
+                </td>
+                <td class="w-25">
+                    Helsinki
+                    <br>
+                    <small class="text-secondary">Finland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WPHelsinki/events/nbnnjlyzmbgb/">WordPress Meetup: The Responsibility Process</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Helsinki</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="21.907691955566" data-latitude="48.934867858887" data-datetime="2019-09-04 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 04</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Humenné
+                    <br>
+                    <small class="text-secondary">Slovakia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Humenne-WordPress-Meetup/events/262415700/">WordPress Humenné meetup 9/2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Humenné WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-82.551300048828" data-latitude="35.597885131836" data-datetime="2019-09-04 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 04</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Asheville
+                    <br>
+                    <small class="text-secondary">North Carolina</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Asheville-Area-WordPress-Group/events/264084260/">Using custom tables to hold post meta and user meta data</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Asheville Area WordPress Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-58.431926727295" data-latitude="-34.58610534668" data-datetime="2019-09-04 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 04</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Ciudad Autónoma de Buenos Aires
+                    <br>
+                    <small class="text-secondary">Argentina</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wordpress-buenosaires/events/264167515/">WordPress Meetup Septiembre - Debugging en WordPress</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Buenos Aires</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-66.875358581543" data-latitude="10.487613677979" data-datetime="2019-09-05 09:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 05</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    Caracas
+                    <br>
+                    <small class="text-secondary">Venezuela</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Meetup-Caracas/events/264132684/">Café + Código</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Caracas</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="22.264272689819" data-latitude="60.449764251709" data-datetime="2019-09-05 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 05</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Turku
+                    <br>
+                    <small class="text-secondary">Finland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Turku-WordPress-Meetup/events/263861842/">Meet &amp; Greet WordPress Users from Turku Area</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Turku WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-77.110664367676" data-latitude="38.881832122803" data-datetime="2019-09-05 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 05</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Arlington
+                    <br>
+                    <small class="text-secondary">Virginia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wordpressdc/events/264168183/">WordPress NoVa/Arlington: Question And Answer Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress DC</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="37.573364257812" data-latitude="55.807910919189" data-datetime="2019-09-05 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 05</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Москва
+                    <br>
+                    <small class="text-secondary">Russia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wordpress-moscow/events/263354050/">WP Moscow #9. Осенний митап на крыше</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Moscow</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="5.7299852371216" data-latitude="51.806587219238" data-datetime="2019-09-06 10:00">
+                <td class="w-25">
+                    <nobr>Fri, Sep 06</nobr>
+                    <br>
+                    <small class="text-secondary">10:00</small>
+                </td>
+                <td class="w-25">
+                    Wijchen
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Meetup-Nijmegen/events/264028571/">WordPress Contributor Day #3 at Yoast</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Nijmegen</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="3.2949280738831" data-latitude="6.4660301208496" data-datetime="2019-09-06 12:00">
+                <td class="w-25">
+                    <nobr>Fri, Sep 06</nobr>
+                    <br>
+                    <small class="text-secondary">12:00</small>
+                </td>
+                <td class="w-25">
+                    Lagos
+                    <br>
+                    <small class="text-secondary">Nigeria</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Lagos-WordPress-Meetup-Group/events/264154618/">How to Create an Online Marketplace using WordPress</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Lagos WordPress Community</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-84.043472290039" data-latitude="9.9328260421753" data-datetime="2019-09-07 08:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 07</nobr>
+                    <br>
+                    <small class="text-secondary">08:00</small>
+                </td>
+                <td class="w-25">
+                    San José, Costa Rica
+                    <br>
+                    <small class="text-secondary">Costa Rica</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wpcostarica/events/258963543/">WordCamp San José, Costa Rica 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">San José, Costa Rica WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="121.02294158936" data-latitude="14.55766582489" data-datetime="2019-09-07 13:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 07</nobr>
+                    <br>
+                    <small class="text-secondary">13:00</small>
+                </td>
+                <td class="w-25">
+                    Makati
+                    <br>
+                    <small class="text-secondary">Philippines</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Manila-WordPress-Meetup/events/264153934/">WordPress for Bloggers</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Manila WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="136.75982666016" data-latitude="35.427318572998" data-datetime="2019-09-07 13:30">
+                <td class="w-25">
+                    <nobr>Sat, Sep 07</nobr>
+                    <br>
+                    <small class="text-secondary">13:30</small>
+                </td>
+                <td class="w-25">
+                    岐阜県
+                    <br>
+                    <small class="text-secondary">Japan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Gifu-WordPress-Meetup/events/264185187/">[岐阜]Gifu WordPress Meetup #14 「公式テーマTwentyNineteenから読み解くテーマ制作のお作法」</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Gifu WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0" data-latitude="0" data-datetime="2019-09-07 16:30">
+                <td class="w-25">
+                    <nobr>Sat, Sep 07</nobr>
+                    <br>
+                    <small class="text-secondary">16:30</small>
+                </td>
+                <td class="w-25">
+                    Eldoret
+                    <br>
+                    <small class="text-secondary">Kenya</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbkb/">Eldoret Wordpress MeetUp</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Eldoret WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-71.540298461914" data-latitude="-16.40548324585" data-datetime="2019-09-07 18:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 07</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Arequipa
+                    <br>
+                    <small class="text-secondary">Peru</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wpperu-arequipa/events/264263007/">X Meetup - Diseña una web para tu negocio sin saber programar con elementor.</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Perú - Arequipa</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-71.382438659668" data-latitude="42.407211303711" data-datetime="2019-09-08 00:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 08</nobr>
+                    <br>
+                    <small class="text-secondary">00:00</small>
+                </td>
+                <td class="w-25">
+                    Virtual
+                    <br>
+                    <small class="text-secondary">Massachusetts</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/bostonphp/events/262047400/">WordPress Dressing, Season 2</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Boston PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-81.345260620117" data-latitude="28.56750869751" data-datetime="2019-09-09 08:30">
+                <td class="w-25">
+                    <nobr>Mon, Sep 09</nobr>
+                    <br>
+                    <small class="text-secondary">08:30</small>
+                </td>
+                <td class="w-25">
+                    Orlando
+                    <br>
+                    <small class="text-secondary">Florida</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Orlando/events/263753488/">Coffee and WordPress at Bikes Beans &amp; Bordeaux</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Orlando</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0" data-latitude="0" data-datetime="2019-09-09 16:30">
+                <td class="w-25">
+                    <nobr>Mon, Sep 09</nobr>
+                    <br>
+                    <small class="text-secondary">16:30</small>
+                </td>
+                <td class="w-25">
+                    Eldoret
+                    <br>
+                    <small class="text-secondary">Kenya</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbmb/">Eldoret Wordpress MeetUp</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Eldoret WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-74.219345092773" data-latitude="40.811279296875" data-datetime="2019-09-09 19:00">
+                <td class="w-25">
+                    <nobr>Mon, Sep 09</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Montclair
+                    <br>
+                    <small class="text-secondary">New Jersey</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Montclair-Meetup/events/mspdjqyzmbmb/">Help Desk - Bring Your Laptop, Yourself and Your WordPress Problems</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Montclair Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="5.3407731056213" data-latitude="50.932872772217" data-datetime="2019-09-09 19:00">
+                <td class="w-25">
+                    <nobr>Mon, Sep 09</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Hasselt
+                    <br>
+                    <small class="text-secondary">Belgium</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Hasselt-Meetup/events/263832915/">WordPress Expert Helpdesk</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Hasselt Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0" data-latitude="0" data-datetime="2019-09-10 16:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">16:00</small>
+                </td>
+                <td class="w-25">
+                    Aarhus
+                    <br>
+                    <small class="text-secondary">Denmark</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Aarhus/events/264020522/">Der er en ny Meetup Wordpress Aarhus i kalenderen</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Aarhus</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="10.746315956116" data-latitude="59.910057067871" data-datetime="2019-09-10 17:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">17:00</small>
+                </td>
+                <td class="w-25">
+                    Oslo
+                    <br>
+                    <small class="text-secondary">Norway</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Oslo-WordPress-Meetup-Group/events/263803514/">Oslo WordPress Meetup September edition</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Oslo WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-71.378784179688" data-latitude="41.882518768311" data-datetime="2019-09-10 18:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Pawtucket
+                    <br>
+                    <small class="text-secondary">Rhode Island</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPressRI/events/rnlslqyzmbnb/">Topic TBD But It Will Be Awesome!</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress RI Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-73.993011474609" data-latitude="40.746532440186" data-datetime="2019-09-10 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    New York
+                    <br>
+                    <small class="text-secondary">New York</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPressNYC/events/264406340/">Manhattan WPNYC Help Desk</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress NYC Meetup Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-75.566596984863" data-latitude="6.2648630142212" data-datetime="2019-09-10 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Medellín
+                    <br>
+                    <small class="text-secondary">Colombia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPressMedellin/events/264514463/">Testing Workshop: UX + WordPress = 💙</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Medellín</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="138.5916595459" data-latitude="-34.923198699951" data-datetime="2019-09-10 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Adelaide
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Adelaide/events/261421554/">WordPress Adelaide - September Meetup - Focus On: Hosting &amp; Performance</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Adelaide</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="9.2213478088379" data-latitude="45.497333526611" data-datetime="2019-09-10 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Milano
+                    <br>
+                    <small class="text-secondary">Italy</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Meetup-Milano/events/264309125/">WP Meetup Milano Settembre 2019 | Utilizzo di WordPress nella Data Analytics</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Milano</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="35.212745666504" data-latitude="31.785522460938" data-datetime="2019-09-10 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Jerusalem
+                    <br>
+                    <small class="text-secondary">Israel</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Jerusalem-WordPress-Meetup/events/264345739/">Jerusalem WordPress Beer &#039;n Shmooze</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Jerusalem WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="6.9025659561157" data-latitude="52.222831726074" data-datetime="2019-09-10 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Enschede
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Meetup-Twente/events/263800834/">WordPress Meetup Twente 10 september 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Twente</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="10.998634338379" data-latitude="45.430229187012" data-datetime="2019-09-10 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Verona
+                    <br>
+                    <small class="text-secondary">Italy</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Verona-WordPress-Meetup/events/264396820/">Verona WordPress Meetup SETTEMBRE 2019 #32 - Le novità di WordPress</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Verona WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="6.7902460098267" data-latitude="51.25110244751" data-datetime="2019-09-10 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 10</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Düsseldorf
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Dusseldorf-WordPress-Meetup/events/txjsnqyzmbnb/">WordPress Meetup Düsseldorf #35 – Das große WordPress Speed-Dating</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Düsseldorf WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-75.692520141602" data-latitude="45.42936706543" data-datetime="2019-09-11 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 11</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Ottawa
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/The-Ottawa-WordPress-Group/events/263939329/">September 2019 Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">The Ottawa WordPress Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="144.99008178711" data-latitude="-37.829200744629" data-datetime="2019-09-11 18:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 11</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Richmond
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Melbourne/events/kkkwlpyzmbpb/">WordPress Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Melbourne User Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="136.88749694824" data-latitude="35.172775268555" data-datetime="2019-09-11 18:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 11</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Aichi Prefecture
+                    <br>
+                    <small class="text-secondary">Japan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Aichi-WordPress-Meetup/events/264360267/">[愛知]Aichi WordPress Meetup #10</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Aichi WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-3.7182219028473" data-latitude="40.412425994873" data-datetime="2019-09-11 18:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 11</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Madrid
+                    <br>
+                    <small class="text-secondary">Spain</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Madrid/events/263751142/">&lt;devs&gt; Taller de React: de 0 a ninja &lt;/devs&gt;</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Madrid</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="98.986877441406" data-latitude="18.79314994812" data-datetime="2019-09-11 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 11</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Amphoe Mueang Chiang Mai
+                    <br>
+                    <small class="text-secondary">Thailand</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Chiang-Mai-WordPress-Meetup/events/264547814/">Pricing WordPress Services - ตีราคา WordPress ยังไงให้เหมาะสม</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Chiang Mai WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="23.772108078003" data-latitude="61.49976348877" data-datetime="2019-09-12 16:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 12</nobr>
+                    <br>
+                    <small class="text-secondary">16:00</small>
+                </td>
+                <td class="w-25">
+                    Tampere
+                    <br>
+                    <small class="text-secondary">Finland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Tampere-WordPress-Meetup/events/gjrgsnyzmbqb/">What’s up Gutenberg?</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Tampere WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-82.536590576172" data-latitude="27.338535308838" data-datetime="2019-09-12 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 12</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Sarasota
+                    <br>
+                    <small class="text-secondary">Florida</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/SarasotaWordPress/events/263750555/">WordPress vs Webflow</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Sarasota WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="153.03448486328" data-latitude="-27.458061218262" data-datetime="2019-09-12 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 12</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Fortitude Valley
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Brisbane/events/263854514/">[Fortitude Valley] WordPress Brisbane September</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Brisbane</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="6.0933017730713" data-latitude="52.508583068848" data-datetime="2019-09-12 18:45">
+                <td class="w-25">
+                    <nobr>Thu, Sep 12</nobr>
+                    <br>
+                    <small class="text-secondary">18:45</small>
+                </td>
+                <td class="w-25">
+                    Zwolle
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Zwolle-WordPress-Meetup/events/bgdwbryzmbqb/">WordPress Meetup Zwolle</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Zwolle</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="7.6697812080383" data-latitude="45.050186157227" data-datetime="2019-09-12 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 12</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Torino
+                    <br>
+                    <small class="text-secondary">Italy</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Meetup-Torino/events/264313106/">WP Meetup 12Set: Quello che avreste voluto sapere e non avete mai osato chiedere</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Torino</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-81.515129089355" data-latitude="28.376691818237" data-datetime="2019-09-12 20:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 12</nobr>
+                    <br>
+                    <small class="text-secondary">20:30</small>
+                </td>
+                <td class="w-25">
+                    Lake Buena Vista
+                    <br>
+                    <small class="text-secondary">Florida</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Orlando/events/263847409/">Automattic Meet &amp; Greet</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Orlando</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="139.69549560547" data-latitude="35.656063079834" data-datetime="2019-09-13 19:00">
+                <td class="w-25">
+                    <nobr>Fri, Sep 13</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Tōkyō-to
+                    <br>
+                    <small class="text-secondary">Japan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Tokyo-WordPress-Meetup/events/263822869/">道玄坂 WordPress Meetup #5　あなたの知らない中国向けWebサイトのこと　loftwork COOOP10</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Tokyo WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-73.983169555664" data-latitude="40.757904052734" data-datetime="2019-09-14 08:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">08:00</small>
+                </td>
+                <td class="w-25">
+                    New York
+                    <br>
+                    <small class="text-secondary">New York</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPressNYC/events/264520257/">WORDCAMPNYC 2019 September 14-15</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress NYC Meetup Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="8.5160503387451" data-latitude="47.389911651611" data-datetime="2019-09-14 09:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    Zürich
+                    <br>
+                    <small class="text-secondary">Switzerland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Zurich/events/263197017/">WordCamp Zurich 2019 (Ticket needed)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Zurich</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-99.180519104004" data-latitude="19.412139892578" data-datetime="2019-09-14 10:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">10:00</small>
+                </td>
+                <td class="w-25">
+                    Mexico DF
+                    <br>
+                    <small class="text-secondary">Mexico</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Mexico/events/264007868/">IBM Watson Assistant WorkShop</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Mexico</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="135.75941467285" data-latitude="34.996589660645" data-datetime="2019-09-14 13:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">13:00</small>
+                </td>
+                <td class="w-25">
+                    Kyoto
+                    <br>
+                    <small class="text-secondary">Japan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Kansai-WordPress-Meetup/events/264050471/">[京都] Kansai WordPress Meetup京都 #5 「プラグインの話をしよう」</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Kansai WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="83.466049194336" data-latitude="27.660778045654" data-datetime="2019-09-14 13:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">13:00</small>
+                </td>
+                <td class="w-25">
+                    Tilottama
+                    <br>
+                    <small class="text-secondary">Nepal</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Butwal-WordPress-Meetup/events/264308760/">WordPress Butwal September Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Butwal WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="139.34031677246" data-latitude="35.657875061035" data-datetime="2019-09-14 14:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">14:00</small>
+                </td>
+                <td class="w-25">
+                    Hachioji
+                    <br>
+                    <small class="text-secondary">Japan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Tokyo-WordPress-Meetup/events/264519537/">八王子WordPressミートアップ（旧・八王子WordPressもくもく会）</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Tokyo WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="74.267616271973" data-latitude="31.447322845459" data-datetime="2019-09-14 16:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">16:00</small>
+                </td>
+                <td class="w-25">
+                    Lahore
+                    <br>
+                    <small class="text-secondary">Pakistan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Lahore/events/263344711/">Introduction to Open Source</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetups Lahore</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0" data-latitude="0" data-datetime="2019-09-14 16:30">
+                <td class="w-25">
+                    <nobr>Sat, Sep 14</nobr>
+                    <br>
+                    <small class="text-secondary">16:30</small>
+                </td>
+                <td class="w-25">
+                    Eldoret
+                    <br>
+                    <small class="text-secondary">Kenya</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbsb/">Eldoret Wordpress MeetUp</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Eldoret WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="139.62788391113" data-latitude="35.611907958984" data-datetime="2019-09-15 10:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 15</nobr>
+                    <br>
+                    <small class="text-secondary">10:00</small>
+                </td>
+                <td class="w-25">
+                    Tokyo
+                    <br>
+                    <small class="text-secondary">Japan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Tokyo-WordPress-Meetup/events/264122672/">第8回 二子玉川 WordPress Meetup東京都市大学二子玉川夢キャンパス</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Tokyo WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-79.477615356445" data-latitude="43.650886535645" data-datetime="2019-09-15 18:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 15</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Toronto
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WPToronto/events/264117306/">WordPress social</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">The Toronto WordPress Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0" data-latitude="0" data-datetime="2019-09-16 16:30">
+                <td class="w-25">
+                    <nobr>Mon, Sep 16</nobr>
+                    <br>
+                    <small class="text-secondary">16:30</small>
+                </td>
+                <td class="w-25">
+                    Eldoret
+                    <br>
+                    <small class="text-secondary">Kenya</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbvb/">Eldoret Wordpress MeetUp</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Eldoret WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="4.4607830047607" data-latitude="51.906909942627" data-datetime="2019-09-16 19:00">
+                <td class="w-25">
+                    <nobr>Mon, Sep 16</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Rotterdam
+                    <br>
+                    <small class="text-secondary">Netherlands</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Rotterdam-WordPress-Meetup/events/264056860/">WordPress Meetup Rotterdam -  16 september 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup 010</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-74.219345092773" data-latitude="40.811279296875" data-datetime="2019-09-16 19:00">
+                <td class="w-25">
+                    <nobr>Mon, Sep 16</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Montclair
+                    <br>
+                    <small class="text-secondary">New Jersey</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Montclair-Meetup/events/tcbcmqyzmbvb/">WordPress Professionals Hangout</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Montclair Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="103.84741210938" data-latitude="1.2786450386047" data-datetime="2019-09-16 19:00">
+                <td class="w-25">
+                    <nobr>Mon, Sep 16</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Singapore
+                    <br>
+                    <small class="text-secondary">Singapore</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Singapore/events/264079477/">WordPress Meetup (September 2019)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Singapore</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="28.003927230835" data-latitude="-26.017278671265" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Johannesburg
+                    <br>
+                    <small class="text-secondary">South Africa</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Joburg/events/wfctqqyzmbwb/">An awesome topic TBC</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Jo&#039;burg</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="12.373519897461" data-latitude="51.332103729248" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Leipzig
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Leipzig-WordPress-Meetup/events/257983072/">WordPress Meetup Leipzig - Werkstatt</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Leipzig</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="6.132050037384" data-latitude="49.608436584473" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Luxembourg
+                    <br>
+                    <small class="text-secondary">Luxembourg</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Meetup-Luxembourg/events/263478138/">WordPress Luxembourg | September Meetup | Collaborative Workshop</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Luxembourg</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="4.404550075531" data-latitude="51.221538543701" data-datetime="2019-09-17 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 17</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Antwerpen
+                    <br>
+                    <small class="text-secondary">Belgium</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Antwerp-WordPress-Meetup/events/264430690/">WordPress Meetup Antwerp: URL Rewrite Rules + a WP Q&amp;A</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Antwerp WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="16.837295532227" data-latitude="41.136741638184" data-datetime="2019-09-18 17:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">17:30</small>
+                </td>
+                <td class="w-25">
+                    Bari
+                    <br>
+                    <small class="text-secondary">Italy</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Bari/events/264395934/">incontro WordPress Bari ~ Settembre 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Bari</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-82.551300048828" data-latitude="35.597885131836" data-datetime="2019-09-18 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Asheville
+                    <br>
+                    <small class="text-secondary">North Carolina</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Asheville-Area-WordPress-Group/events/262976686/">Intro to the Divi Theme</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Asheville Area WordPress Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="153.02235412598" data-latitude="-27.237770080566" data-datetime="2019-09-18 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Brisbane
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Brisbane/events/264486600/">[North Lakes] Brisbane Northside WordPress Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Brisbane</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-2.2396988868713" data-latitude="53.486267089844" data-datetime="2019-09-18 18:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Manchester
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/ManchesterWordPressUserGroup/events/szdgfqyzmbxb/">MWUG Monthly Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Manchester WordPress User Group (MWUG)</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-0.37446001172066" data-latitude="39.467460632324" data-datetime="2019-09-18 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Valencia
+                    <br>
+                    <small class="text-secondary">Spain</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wordpress-valencia-meetup/events/264309259/">Por qué no tienes visibilidad en Google: descubre qué estás haciendo mal.</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Valencia</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0" data-latitude="0" data-datetime="2019-09-18 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 18</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Kowloon
+                    <br>
+                    <small class="text-secondary">Hong Kong</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Hong-Kong-WordPress-Meetup/events/264488621/">WordPress Meetup #33: Google Analytics (廣東話 Cantonese)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Hong Kong WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="23.9615650177" data-latitude="54.89958190918" data-datetime="2019-09-19 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Kaunas
+                    <br>
+                    <small class="text-secondary">Lithuania</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Kaunas-WordPress-Meetup/events/skqkhryzmbzb/">WordPress Meetup Kaunas #41</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Kaunas WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="2.3459129333496" data-latitude="48.879348754883" data-datetime="2019-09-19 18:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Paris
+                    <br>
+                    <small class="text-secondary">France</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wordpress-ile-de-france/events/264349950/">Optimisation sémantique de vos contenus</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Paris</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="11.959034919739" data-latitude="45.673049926758" data-datetime="2019-09-19 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Castelfranco Veneto
+                    <br>
+                    <small class="text-secondary">Italy</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Treviso-WordPress-Meetup/events/262389870/">Treviso WordPress Meetup 19 settembre 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Treviso WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="13.390459060669" data-latitude="52.516765594482" data-datetime="2019-09-19 19:15">
+                <td class="w-25">
+                    <nobr>Thu, Sep 19</nobr>
+                    <br>
+                    <small class="text-secondary">19:15</small>
+                </td>
+                <td class="w-25">
+                    Berlin
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Berlin-WordPress-Meetup/events/262956369/">WordPress Beginner Meetup – Schriften und WordPress</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Berlin</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="15.102730751038" data-latitude="37.510063171387" data-datetime="2019-09-20 09:30">
+                <td class="w-25">
+                    <nobr>Fri, Sep 20</nobr>
+                    <br>
+                    <small class="text-secondary">09:30</small>
+                </td>
+                <td class="w-25">
+                    Catania
+                    <br>
+                    <small class="text-secondary">Italy</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Meetup-WordPress-Catania/events/264396857/">WordCamp Catania 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Catania</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="73.936141967773" data-latitude="18.543369293213" data-datetime="2019-09-21 10:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">10:00</small>
+                </td>
+                <td class="w-25">
+                    Pune
+                    <br>
+                    <small class="text-secondary">India</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Pune-WordPress-Knowledge-Exchange/events/264252479/">GraphQL with React and WordPress</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Pune WordPress Knowledge Exchange</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-98.195037841797" data-latitude="19.040473937988" data-datetime="2019-09-21 11:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">11:00</small>
+                </td>
+                <td class="w-25">
+                    Puebla
+                    <br>
+                    <small class="text-secondary">Mexico</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wppuebla/events/264096246/">27 Meetup WpPuebla ¿Cómo Sacar 100 en Google PageSpeed con WordPress? (o casí)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Puebla</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-73.985565185547" data-latitude="40.686950683594" data-datetime="2019-09-21 13:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">13:00</small>
+                </td>
+                <td class="w-25">
+                    Brooklyn
+                    <br>
+                    <small class="text-secondary">New York</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPressNYC/events/rckbrqyzmbcc/">Brooklyn WordPress Help Desk</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress NYC Meetup Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="137.97105407715" data-latitude="36.234657287598" data-datetime="2019-09-21 14:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">14:00</small>
+                </td>
+                <td class="w-25">
+                    Matsumoto, Nagano
+                    <br>
+                    <small class="text-secondary">Japan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Shinshu-WordPress-Meetup/events/264305044/">信州 WordPress Meetup in 松本 Vol.16 WordPress とかの色んな話をする会</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Shinshu WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0" data-latitude="0" data-datetime="2019-09-21 16:30">
+                <td class="w-25">
+                    <nobr>Sat, Sep 21</nobr>
+                    <br>
+                    <small class="text-secondary">16:30</small>
+                </td>
+                <td class="w-25">
+                    Eldoret
+                    <br>
+                    <small class="text-secondary">Kenya</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbcc/">Eldoret Wordpress MeetUp</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Eldoret WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="139.72959899902" data-latitude="35.568435668945" data-datetime="2019-09-22 11:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 22</nobr>
+                    <br>
+                    <small class="text-secondary">11:00</small>
+                </td>
+                <td class="w-25">
+                    Tōkyō-to
+                    <br>
+                    <small class="text-secondary">Japan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Tokyo-WordPress-Meetup/events/264081336/">羽田 WordPress Meetup (2019年9月)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Tokyo WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="120.67350769043" data-latitude="24.147960662842" data-datetime="2019-09-22 14:00">
+                <td class="w-25">
+                    <nobr>Sun, Sep 22</nobr>
+                    <br>
+                    <small class="text-secondary">14:00</small>
+                </td>
+                <td class="w-25">
+                    Taichung City
+                    <br>
+                    <small class="text-secondary">Taiwan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Taichung-WordPress-Meetup/events/264515435/">WordPress 台中小聚 #15</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Taichung WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0" data-latitude="0" data-datetime="2019-09-23 16:30">
+                <td class="w-25">
+                    <nobr>Mon, Sep 23</nobr>
+                    <br>
+                    <small class="text-secondary">16:30</small>
+                </td>
+                <td class="w-25">
+                    Eldoret
+                    <br>
+                    <small class="text-secondary">Kenya</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbfc/">Eldoret Wordpress MeetUp</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Eldoret WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="24.940299987793" data-latitude="37.440402984619" data-datetime="2019-09-23 18:00">
+                <td class="w-25">
+                    <nobr>Mon, Sep 23</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Siros Ermoupoli
+                    <br>
+                    <small class="text-secondary">Greece</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Athens-WordPress-Meetup/events/263260442/">WordPress Syros 1st Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Athens WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-79.293975830078" data-latitude="43.690132141113" data-datetime="2019-09-24 14:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">14:00</small>
+                </td>
+                <td class="w-25">
+                    Toronto
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WPToronto/events/mrfjhryzmbgc/">Not For Profit Websites - Monthly Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">The Toronto WordPress Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="12.54375743866" data-latitude="55.66780090332" data-datetime="2019-09-24 17:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">17:00</small>
+                </td>
+                <td class="w-25">
+                    København
+                    <br>
+                    <small class="text-secondary">Denmark</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Copenhagen/events/264351736/">September WordPress Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Copenhagen</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-123.39725494385" data-latitude="48.436359405518" data-datetime="2019-09-24 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Victoria
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/yyjWordPress/events/264036739/">WordPress Seminar - September 24, 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Victoria WordPress Meetup &amp; Events</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="9.4080801010132" data-latitude="56.452590942383" data-datetime="2019-09-24 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Viborg
+                    <br>
+                    <small class="text-secondary">Denmark</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Meetup-Viborg/events/258066710/">Meetup september</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Viborg</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-4.2472968101501" data-latitude="55.859180450439" data-datetime="2019-09-24 18:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Glasgow
+                    <br>
+                    <small class="text-secondary">United Kingdom</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Glasgow-WordPress-Meetup/events/264325679/">Page Builders -- a user&#039;s perspective</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Glasgow WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="9.9335660934448" data-latitude="53.551124572754" data-datetime="2019-09-24 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Hamburg
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Hamburg-WordPress-Meetup/events/zjzdhpyzmbgc/">WordPress Meetup Hamburg</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Hamburg WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-51.196990966797" data-latitude="-30.017881393433" data-datetime="2019-09-24 19:30">
+                <td class="w-25">
+                    <nobr>Tue, Sep 24</nobr>
+                    <br>
+                    <small class="text-secondary">19:30</small>
+                </td>
+                <td class="w-25">
+                    Porto Alegre
+                    <br>
+                    <small class="text-secondary">Brazil</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wp-poa/events/kxzmznyzmbgc/">WordPress POA Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Porto Alegre WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="4.426778793335" data-latitude="51.218864440918" data-datetime="2019-09-25 09:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    Antwerpen
+                    <br>
+                    <small class="text-secondary">Belgium</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Antwerp-WordPress-Meetup/events/264053839/">WordSesh Live stream party</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Antwerp WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="4.4267158508301" data-latitude="51.218845367432" data-datetime="2019-09-25 09:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    Antwerpen
+                    <br>
+                    <small class="text-secondary">Belgium</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Ieper-WordPress-Meetup/events/264053082/">Co-Meetup met WordPress Antwerp: WordSesh streaming party</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Ieper WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="153.05879211426" data-latitude="-27.494369506836" data-datetime="2019-09-25 10:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">10:00</small>
+                </td>
+                <td class="w-25">
+                    Coorparoo
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Brisbane/events/264511872/">[Coorparoo] September Coffee catch up - Casual discussions</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Brisbane</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-86.796211242676" data-latitude="36.159385681152" data-datetime="2019-09-25 11:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">11:00</small>
+                </td>
+                <td class="w-25">
+                    Nashville
+                    <br>
+                    <small class="text-secondary">Tennessee</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/nashvillephp/events/mklnwqyzmbhc/">Nashville PHP/WordPress BBQ Lunch</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Nashville PHP</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="2.1716780662537" data-latitude="41.386943817139" data-datetime="2019-09-25 18:30">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Barcelona
+                    <br>
+                    <small class="text-secondary">Spain</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wordpressbcn/events/263549139/">TBA - Pendiente de anunciar</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Barcelona</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="9.7853918075562" data-latitude="54.911125183105" data-datetime="2019-09-25 18:45">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">18:45</small>
+                </td>
+                <td class="w-25">
+                    Sønderborg
+                    <br>
+                    <small class="text-secondary">Denmark</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Meetup-Sonderborg/events/257634209/">WordPress Meetup Sønderborg - 25. september 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Sønderborg</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="121.56625366211" data-latitude="25.081464767456" data-datetime="2019-09-25 19:00">
+                <td class="w-25">
+                    <nobr>Wed, Sep 25</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Taipei
+                    <br>
+                    <small class="text-secondary">Taiwan</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Taipei-WordPress/events/264489857/">[默默會 + short sessions] WordPress English/Japanese Meetup (Read the description)</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Taipei WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-71.374084472656" data-latitude="41.497589111328" data-datetime="2019-09-26 12:30">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">12:30</small>
+                </td>
+                <td class="w-25">
+                    Jamestown
+                    <br>
+                    <small class="text-secondary">Rhode Island</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPressRI/events/mlgnzqyzmbjc/">WordPress Lunch and Learn</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress RI Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="7.4422578811646" data-latitude="46.948257446289" data-datetime="2019-09-26 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Bern
+                    <br>
+                    <small class="text-secondary">Switzerland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Bern/events/vwhkqqyzmbjc/">Backups - Verschiedene Wege der Umsetzung</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Bern</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="115.85907745361" data-latitude="-31.955770492554" data-datetime="2019-09-26 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Perth
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Perth/events/264456861/">September Meetup - Topic TBC</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Perth</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-78.47917175293" data-latitude="-0.19993199408054" data-datetime="2019-09-26 18:20">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">18:20</small>
+                </td>
+                <td class="w-25">
+                    Quito
+                    <br>
+                    <small class="text-secondary">Ecuador</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Quito/events/264053545/">Meetup N°13: Introducción a Elementor (free) y Copywriting</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Quito</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-3.7182219028473" data-latitude="40.412425994873" data-datetime="2019-09-26 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Madrid
+                    <br>
+                    <small class="text-secondary">Spain</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Madrid/events/264240093/">wp-config vitaminado: No te conformes con lo que viene por defecto, ¡optimízalo!</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Madrid</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-79.559883117676" data-latitude="43.646202087402" data-datetime="2019-09-26 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Etobicoke
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WPToronto/events/264208903/">PageBuilders as  PageStylers for a distinct WordPress advantage</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">The Toronto WordPress Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-49.272659301758" data-latitude="-25.438842773438" data-datetime="2019-09-26 19:00">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Curitiba
+                    <br>
+                    <small class="text-secondary">Brazil</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/wpcuritiba/events/264215502/">50º Meetup WordPress Curitiba</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Comunidade WordPress Curitiba</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="13.390459060669" data-latitude="52.516765594482" data-datetime="2019-09-26 19:15">
+                <td class="w-25">
+                    <nobr>Thu, Sep 26</nobr>
+                    <br>
+                    <small class="text-secondary">19:15</small>
+                </td>
+                <td class="w-25">
+                    Berlin
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Berlin-WordPress-Meetup/events/gmzjwqyzmbjc/">WordPress Meetup Berlin</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Berlin</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="30.954309463501" data-latitude="29.968967437744" data-datetime="2019-09-27 15:00">
+                <td class="w-25">
+                    <nobr>Fri, Sep 27</nobr>
+                    <br>
+                    <small class="text-secondary">15:00</small>
+                </td>
+                <td class="w-25">
+                    6th of October City
+                    <br>
+                    <small class="text-secondary">Egypt</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/CairoWP/events/264161704/">WordPress Cairo - September 2019 Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Cairo</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-123.12135314941" data-latitude="49.282363891602" data-datetime="2019-09-28 09:00">
+                <td class="w-25">
+                    <nobr>Sat, Sep 28</nobr>
+                    <br>
+                    <small class="text-secondary">09:00</small>
+                </td>
+                <td class="w-25">
+                    Vancouver,
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Vancouver-WordPress-Meetup-Group/events/263783015/">WordCamp Vancouver 2019</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">The Vancouver WordPress Meetup Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0" data-latitude="0" data-datetime="2019-09-28 16:30">
+                <td class="w-25">
+                    <nobr>Sat, Sep 28</nobr>
+                    <br>
+                    <small class="text-secondary">16:30</small>
+                </td>
+                <td class="w-25">
+                    Eldoret
+                    <br>
+                    <small class="text-secondary">Kenya</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmblc/">Eldoret Wordpress MeetUp</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Eldoret WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="0" data-latitude="0" data-datetime="2019-09-30 16:30">
+                <td class="w-25">
+                    <nobr>Mon, Sep 30</nobr>
+                    <br>
+                    <small class="text-secondary">16:30</small>
+                </td>
+                <td class="w-25">
+                    Eldoret
+                    <br>
+                    <small class="text-secondary">Kenya</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbnc/">Eldoret Wordpress MeetUp</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Eldoret WordPress Meetup</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="151.20446777344" data-latitude="-33.872661590576" data-datetime="2019-09-30 18:00">
+                <td class="w-25">
+                    <nobr>Mon, Sep 30</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Sydney
+                    <br>
+                    <small class="text-secondary">Australia</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/WordPress-Sydney/events/258916969/">Landing Page Essentials and A/B Testing with Google Optimize</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Sydney</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-71.070732116699" data-latitude="42.369937896729" data-datetime="2019-09-30 18:30">
+                <td class="w-25">
+                    <nobr>Mon, Sep 30</nobr>
+                    <br>
+                    <small class="text-secondary">18:30</small>
+                </td>
+                <td class="w-25">
+                    Cambridge
+                    <br>
+                    <small class="text-secondary">Massachusetts</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/boston-wordpress-meetup/events/ghbgcryzmbnc/">Bostonwp Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Boston WordPress</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="12.373519897461" data-latitude="51.332103729248" data-datetime="2019-10-01 19:00">
+                <td class="w-25">
+                    <nobr>Tue, Oct 01</nobr>
+                    <br>
+                    <small class="text-secondary">19:00</small>
+                </td>
+                <td class="w-25">
+                    Leipzig
+                    <br>
+                    <small class="text-secondary">Germany</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Leipzig-WordPress-Meetup/events/264038181/">WordPress Meetup Leipzig - #38 Mit WordPress die Welt retten</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">WordPress Meetup Leipzig</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="-75.692520141602" data-latitude="45.42936706543" data-datetime="2019-10-02 18:00">
+                <td class="w-25">
+                    <nobr>Wed, Oct 02</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Ottawa
+                    <br>
+                    <small class="text-secondary">Canada</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/The-Ottawa-WordPress-Group/events/263939456/">October 2019 Meetup</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">The Ottawa WordPress Group</small>
+                </td>
+            </tr>
+                    
+                            <tr class="meetup" data-longitude="22.264272689819" data-latitude="60.449764251709" data-datetime="2019-10-03 18:00">
+                <td class="w-25">
+                    <nobr>Thu, Oct 03</nobr>
+                    <br>
+                    <small class="text-secondary">18:00</small>
+                </td>
+                <td class="w-25">
+                    Turku
+                    <br>
+                    <small class="text-secondary">Finland</small>
+                </td>
+                <td class="w-50">
+                    <strong>
+                        <a href="https://www.meetup.com/Turku-WordPress-Meetup/events/263861847/">WordPress Meetup: [Topic to be announced]</a>
+                    </strong>
+                    <br>
+                    <small class="text-secondary">Turku WordPress Meetup</small>
+                </td>
+            </tr>
+            </table>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+
+<script src="/assets/js/menu-area-pick.js?v=1449051994"></script>
+
+<script src="https://unpkg.com/leaflet@1.3.2/dist/leaflet.js"
+        integrity="sha512-2fA79E27MOeBgLjmBrtAgM/20clVSV8vJERaW/EcnnWCVGwQRazzKtQS1kIusCZv1PtaQxosDZZ0F1Oastl55w=="
+        crossorigin=""></script>
+
+<script type="text/javascript">
+    var icons = {
+        // pick from: https://github.com/pointhi/leaflet-color-markers
+        green: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
+        orange: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png',
+        red: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png'
+    };
+
+    var markers = [
+        
+        {
+                        "type": "green",
+                        "title": "WordPress Meetup: The Responsibility Process",
+                        "position": [60.170547485352, 24.931610107422],
+                        "date": "09-04",
+                        "location": "Helsinki",
+                        "url": "https://www.meetup.com/WPHelsinki/events/nbnnjlyzmbgb/",
+                        // for filtering
+                        "datetime": "2019-09-04 17:15",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordPress Humenné meetup 9/2019",
+                        "position": [48.934867858887, 21.907691955566],
+                        "date": "09-04",
+                        "location": "Humenné",
+                        "url": "https://www.meetup.com/Humenne-WordPress-Meetup/events/262415700/",
+                        // for filtering
+                        "datetime": "2019-09-04 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Using custom tables to hold post meta and user meta data",
+                        "position": [35.597885131836, -82.551300048828],
+                        "date": "09-04",
+                        "location": "Asheville",
+                        "url": "https://www.meetup.com/Asheville-Area-WordPress-Group/events/264084260/",
+                        // for filtering
+                        "datetime": "2019-09-04 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordPress Meetup Septiembre - Debugging en WordPress",
+                        "position": [-34.58610534668, -58.431926727295],
+                        "date": "09-04",
+                        "location": "Ciudad Autónoma de Buenos Aires",
+                        "url": "https://www.meetup.com/wordpress-buenosaires/events/264167515/",
+                        // for filtering
+                        "datetime": "2019-09-04 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Café + Código",
+                        "position": [10.487613677979, -66.875358581543],
+                        "date": "09-05",
+                        "location": "Caracas",
+                        "url": "https://www.meetup.com/WordPress-Meetup-Caracas/events/264132684/",
+                        // for filtering
+                        "datetime": "2019-09-05 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Meet &amp; Greet WordPress Users from Turku Area",
+                        "position": [60.449764251709, 22.264272689819],
+                        "date": "09-05",
+                        "location": "Turku",
+                        "url": "https://www.meetup.com/Turku-WordPress-Meetup/events/263861842/",
+                        // for filtering
+                        "datetime": "2019-09-05 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordPress NoVa/Arlington: Question And Answer Meetup",
+                        "position": [38.881832122803, -77.110664367676],
+                        "date": "09-05",
+                        "location": "Arlington",
+                        "url": "https://www.meetup.com/wordpressdc/events/264168183/",
+                        // for filtering
+                        "datetime": "2019-09-05 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WP Moscow #9. Осенний митап на крыше",
+                        "position": [55.807910919189, 37.573364257812],
+                        "date": "09-05",
+                        "location": "Москва",
+                        "url": "https://www.meetup.com/wordpress-moscow/events/263354050/",
+                        // for filtering
+                        "datetime": "2019-09-05 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordPress Contributor Day #3 at Yoast",
+                        "position": [51.806587219238, 5.7299852371216],
+                        "date": "09-06",
+                        "location": "Wijchen",
+                        "url": "https://www.meetup.com/WordPress-Meetup-Nijmegen/events/264028571/",
+                        // for filtering
+                        "datetime": "2019-09-06 10:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "How to Create an Online Marketplace using WordPress",
+                        "position": [6.4660301208496, 3.2949280738831],
+                        "date": "09-06",
+                        "location": "Lagos",
+                        "url": "https://www.meetup.com/Lagos-WordPress-Meetup-Group/events/264154618/",
+                        // for filtering
+                        "datetime": "2019-09-06 12:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordCamp San José, Costa Rica 2019",
+                        "position": [9.9328260421753, -84.043472290039],
+                        "date": "09-07",
+                        "location": "San José, Costa Rica",
+                        "url": "https://www.meetup.com/wpcostarica/events/258963543/",
+                        // for filtering
+                        "datetime": "2019-09-07 08:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordPress for Bloggers",
+                        "position": [14.55766582489, 121.02294158936],
+                        "date": "09-07",
+                        "location": "Makati",
+                        "url": "https://www.meetup.com/Manila-WordPress-Meetup/events/264153934/",
+                        // for filtering
+                        "datetime": "2019-09-07 13:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "[岐阜]Gifu WordPress Meetup #14 「公式テーマTwentyNineteenから読み解くテーマ制作のお作法」",
+                        "position": [35.427318572998, 136.75982666016],
+                        "date": "09-07",
+                        "location": "岐阜県",
+                        "url": "https://www.meetup.com/Gifu-WordPress-Meetup/events/264185187/",
+                        // for filtering
+                        "datetime": "2019-09-07 13:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Eldoret Wordpress MeetUp",
+                        "position": [0, 0],
+                        "date": "09-07",
+                        "location": "Eldoret",
+                        "url": "https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbkb/",
+                        // for filtering
+                        "datetime": "2019-09-07 16:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "X Meetup - Diseña una web para tu negocio sin saber programar con elementor.",
+                        "position": [-16.40548324585, -71.540298461914],
+                        "date": "09-07",
+                        "location": "Arequipa",
+                        "url": "https://www.meetup.com/wpperu-arequipa/events/264263007/",
+                        // for filtering
+                        "datetime": "2019-09-07 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordPress Dressing, Season 2",
+                        "position": [42.407211303711, -71.382438659668],
+                        "date": "09-08",
+                        "location": "Virtual",
+                        "url": "https://www.meetup.com/bostonphp/events/262047400/",
+                        // for filtering
+                        "datetime": "2019-09-08 00:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Coffee and WordPress at Bikes Beans &amp; Bordeaux",
+                        "position": [28.56750869751, -81.345260620117],
+                        "date": "09-09",
+                        "location": "Orlando",
+                        "url": "https://www.meetup.com/WordPress-Orlando/events/263753488/",
+                        // for filtering
+                        "datetime": "2019-09-09 08:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Eldoret Wordpress MeetUp",
+                        "position": [0, 0],
+                        "date": "09-09",
+                        "location": "Eldoret",
+                        "url": "https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbmb/",
+                        // for filtering
+                        "datetime": "2019-09-09 16:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Help Desk - Bring Your Laptop, Yourself and Your WordPress Problems",
+                        "position": [40.811279296875, -74.219345092773],
+                        "date": "09-09",
+                        "location": "Montclair",
+                        "url": "https://www.meetup.com/WordPress-Montclair-Meetup/events/mspdjqyzmbmb/",
+                        // for filtering
+                        "datetime": "2019-09-09 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordPress Expert Helpdesk",
+                        "position": [50.932872772217, 5.3407731056213],
+                        "date": "09-09",
+                        "location": "Hasselt",
+                        "url": "https://www.meetup.com/WordPress-Hasselt-Meetup/events/263832915/",
+                        // for filtering
+                        "datetime": "2019-09-09 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Der er en ny Meetup Wordpress Aarhus i kalenderen",
+                        "position": [0, 0],
+                        "date": "09-10",
+                        "location": "Aarhus",
+                        "url": "https://www.meetup.com/WordPress-Aarhus/events/264020522/",
+                        // for filtering
+                        "datetime": "2019-09-10 16:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Oslo WordPress Meetup September edition",
+                        "position": [59.910057067871, 10.746315956116],
+                        "date": "09-10",
+                        "location": "Oslo",
+                        "url": "https://www.meetup.com/Oslo-WordPress-Meetup-Group/events/263803514/",
+                        // for filtering
+                        "datetime": "2019-09-10 17:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Topic TBD But It Will Be Awesome!",
+                        "position": [41.882518768311, -71.378784179688],
+                        "date": "09-10",
+                        "location": "Pawtucket",
+                        "url": "https://www.meetup.com/WordPressRI/events/rnlslqyzmbnb/",
+                        // for filtering
+                        "datetime": "2019-09-10 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Manhattan WPNYC Help Desk",
+                        "position": [40.746532440186, -73.993011474609],
+                        "date": "09-10",
+                        "location": "New York",
+                        "url": "https://www.meetup.com/WordPressNYC/events/264406340/",
+                        // for filtering
+                        "datetime": "2019-09-10 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Testing Workshop: UX + WordPress = 💙",
+                        "position": [6.2648630142212, -75.566596984863],
+                        "date": "09-10",
+                        "location": "Medellín",
+                        "url": "https://www.meetup.com/WordPressMedellin/events/264514463/",
+                        // for filtering
+                        "datetime": "2019-09-10 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordPress Adelaide - September Meetup - Focus On: Hosting &amp; Performance",
+                        "position": [-34.923198699951, 138.5916595459],
+                        "date": "09-10",
+                        "location": "Adelaide",
+                        "url": "https://www.meetup.com/WordPress-Adelaide/events/261421554/",
+                        // for filtering
+                        "datetime": "2019-09-10 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WP Meetup Milano Settembre 2019 | Utilizzo di WordPress nella Data Analytics",
+                        "position": [45.497333526611, 9.2213478088379],
+                        "date": "09-10",
+                        "location": "Milano",
+                        "url": "https://www.meetup.com/WordPress-Meetup-Milano/events/264309125/",
+                        // for filtering
+                        "datetime": "2019-09-10 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Jerusalem WordPress Beer &#039;n Shmooze",
+                        "position": [31.785522460938, 35.212745666504],
+                        "date": "09-10",
+                        "location": "Jerusalem",
+                        "url": "https://www.meetup.com/Jerusalem-WordPress-Meetup/events/264345739/",
+                        // for filtering
+                        "datetime": "2019-09-10 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordPress Meetup Twente 10 september 2019",
+                        "position": [52.222831726074, 6.9025659561157],
+                        "date": "09-10",
+                        "location": "Enschede",
+                        "url": "https://www.meetup.com/WordPress-Meetup-Twente/events/263800834/",
+                        // for filtering
+                        "datetime": "2019-09-10 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "Verona WordPress Meetup SETTEMBRE 2019 #32 - Le novità di WordPress",
+                        "position": [45.430229187012, 10.998634338379],
+                        "date": "09-10",
+                        "location": "Verona",
+                        "url": "https://www.meetup.com/Verona-WordPress-Meetup/events/264396820/",
+                        // for filtering
+                        "datetime": "2019-09-10 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "green",
+                        "title": "WordPress Meetup Düsseldorf #35 – Das große WordPress Speed-Dating",
+                        "position": [51.25110244751, 6.7902460098267],
+                        "date": "09-10",
+                        "location": "Düsseldorf",
+                        "url": "https://www.meetup.com/Dusseldorf-WordPress-Meetup/events/txjsnqyzmbnb/",
+                        // for filtering
+                        "datetime": "2019-09-10 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "September 2019 Meetup",
+                        "position": [45.42936706543, -75.692520141602],
+                        "date": "09-11",
+                        "location": "Ottawa",
+                        "url": "https://www.meetup.com/The-Ottawa-WordPress-Group/events/263939329/",
+                        // for filtering
+                        "datetime": "2019-09-11 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress Meetup",
+                        "position": [-37.829200744629, 144.99008178711],
+                        "date": "09-11",
+                        "location": "Richmond",
+                        "url": "https://www.meetup.com/WordPress-Melbourne/events/kkkwlpyzmbpb/",
+                        // for filtering
+                        "datetime": "2019-09-11 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "[愛知]Aichi WordPress Meetup #10",
+                        "position": [35.172775268555, 136.88749694824],
+                        "date": "09-11",
+                        "location": "Aichi Prefecture",
+                        "url": "https://www.meetup.com/Aichi-WordPress-Meetup/events/264360267/",
+                        // for filtering
+                        "datetime": "2019-09-11 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "&lt;devs&gt; Taller de React: de 0 a ninja &lt;/devs&gt;",
+                        "position": [40.412425994873, -3.7182219028473],
+                        "date": "09-11",
+                        "location": "Madrid",
+                        "url": "https://www.meetup.com/WordPress-Madrid/events/263751142/",
+                        // for filtering
+                        "datetime": "2019-09-11 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Pricing WordPress Services - ตีราคา WordPress ยังไงให้เหมาะสม",
+                        "position": [18.79314994812, 98.986877441406],
+                        "date": "09-11",
+                        "location": "Amphoe Mueang Chiang Mai",
+                        "url": "https://www.meetup.com/Chiang-Mai-WordPress-Meetup/events/264547814/",
+                        // for filtering
+                        "datetime": "2019-09-11 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "What’s up Gutenberg?",
+                        "position": [61.49976348877, 23.772108078003],
+                        "date": "09-12",
+                        "location": "Tampere",
+                        "url": "https://www.meetup.com/Tampere-WordPress-Meetup/events/gjrgsnyzmbqb/",
+                        // for filtering
+                        "datetime": "2019-09-12 16:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress vs Webflow",
+                        "position": [27.338535308838, -82.536590576172],
+                        "date": "09-12",
+                        "location": "Sarasota",
+                        "url": "https://www.meetup.com/SarasotaWordPress/events/263750555/",
+                        // for filtering
+                        "datetime": "2019-09-12 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "[Fortitude Valley] WordPress Brisbane September",
+                        "position": [-27.458061218262, 153.03448486328],
+                        "date": "09-12",
+                        "location": "Fortitude Valley",
+                        "url": "https://www.meetup.com/WordPress-Brisbane/events/263854514/",
+                        // for filtering
+                        "datetime": "2019-09-12 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress Meetup Zwolle",
+                        "position": [52.508583068848, 6.0933017730713],
+                        "date": "09-12",
+                        "location": "Zwolle",
+                        "url": "https://www.meetup.com/Zwolle-WordPress-Meetup/events/bgdwbryzmbqb/",
+                        // for filtering
+                        "datetime": "2019-09-12 18:45",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WP Meetup 12Set: Quello che avreste voluto sapere e non avete mai osato chiedere",
+                        "position": [45.050186157227, 7.6697812080383],
+                        "date": "09-12",
+                        "location": "Torino",
+                        "url": "https://www.meetup.com/WordPress-Meetup-Torino/events/264313106/",
+                        // for filtering
+                        "datetime": "2019-09-12 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Automattic Meet &amp; Greet",
+                        "position": [28.376691818237, -81.515129089355],
+                        "date": "09-12",
+                        "location": "Lake Buena Vista",
+                        "url": "https://www.meetup.com/WordPress-Orlando/events/263847409/",
+                        // for filtering
+                        "datetime": "2019-09-12 20:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "道玄坂 WordPress Meetup #5　あなたの知らない中国向けWebサイトのこと　loftwork COOOP10",
+                        "position": [35.656063079834, 139.69549560547],
+                        "date": "09-13",
+                        "location": "Tōkyō-to",
+                        "url": "https://www.meetup.com/Tokyo-WordPress-Meetup/events/263822869/",
+                        // for filtering
+                        "datetime": "2019-09-13 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WORDCAMPNYC 2019 September 14-15",
+                        "position": [40.757904052734, -73.983169555664],
+                        "date": "09-14",
+                        "location": "New York",
+                        "url": "https://www.meetup.com/WordPressNYC/events/264520257/",
+                        // for filtering
+                        "datetime": "2019-09-14 08:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordCamp Zurich 2019 (Ticket needed)",
+                        "position": [47.389911651611, 8.5160503387451],
+                        "date": "09-14",
+                        "location": "Zürich",
+                        "url": "https://www.meetup.com/WordPress-Zurich/events/263197017/",
+                        // for filtering
+                        "datetime": "2019-09-14 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "IBM Watson Assistant WorkShop",
+                        "position": [19.412139892578, -99.180519104004],
+                        "date": "09-14",
+                        "location": "Mexico DF",
+                        "url": "https://www.meetup.com/WordPress-Mexico/events/264007868/",
+                        // for filtering
+                        "datetime": "2019-09-14 10:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "[京都] Kansai WordPress Meetup京都 #5 「プラグインの話をしよう」",
+                        "position": [34.996589660645, 135.75941467285],
+                        "date": "09-14",
+                        "location": "Kyoto",
+                        "url": "https://www.meetup.com/Kansai-WordPress-Meetup/events/264050471/",
+                        // for filtering
+                        "datetime": "2019-09-14 13:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress Butwal September Meetup",
+                        "position": [27.660778045654, 83.466049194336],
+                        "date": "09-14",
+                        "location": "Tilottama",
+                        "url": "https://www.meetup.com/Butwal-WordPress-Meetup/events/264308760/",
+                        // for filtering
+                        "datetime": "2019-09-14 13:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "八王子WordPressミートアップ（旧・八王子WordPressもくもく会）",
+                        "position": [35.657875061035, 139.34031677246],
+                        "date": "09-14",
+                        "location": "Hachioji",
+                        "url": "https://www.meetup.com/Tokyo-WordPress-Meetup/events/264519537/",
+                        // for filtering
+                        "datetime": "2019-09-14 14:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Introduction to Open Source",
+                        "position": [31.447322845459, 74.267616271973],
+                        "date": "09-14",
+                        "location": "Lahore",
+                        "url": "https://www.meetup.com/WordPress-Lahore/events/263344711/",
+                        // for filtering
+                        "datetime": "2019-09-14 16:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Eldoret Wordpress MeetUp",
+                        "position": [0, 0],
+                        "date": "09-14",
+                        "location": "Eldoret",
+                        "url": "https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbsb/",
+                        // for filtering
+                        "datetime": "2019-09-14 16:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "第8回 二子玉川 WordPress Meetup東京都市大学二子玉川夢キャンパス",
+                        "position": [35.611907958984, 139.62788391113],
+                        "date": "09-15",
+                        "location": "Tokyo",
+                        "url": "https://www.meetup.com/Tokyo-WordPress-Meetup/events/264122672/",
+                        // for filtering
+                        "datetime": "2019-09-15 10:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress social",
+                        "position": [43.650886535645, -79.477615356445],
+                        "date": "09-15",
+                        "location": "Toronto",
+                        "url": "https://www.meetup.com/WPToronto/events/264117306/",
+                        // for filtering
+                        "datetime": "2019-09-15 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "Eldoret Wordpress MeetUp",
+                        "position": [0, 0],
+                        "date": "09-16",
+                        "location": "Eldoret",
+                        "url": "https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbvb/",
+                        // for filtering
+                        "datetime": "2019-09-16 16:30",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress Meetup Rotterdam -  16 september 2019",
+                        "position": [51.906909942627, 4.4607830047607],
+                        "date": "09-16",
+                        "location": "Rotterdam",
+                        "url": "https://www.meetup.com/Rotterdam-WordPress-Meetup/events/264056860/",
+                        // for filtering
+                        "datetime": "2019-09-16 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress Professionals Hangout",
+                        "position": [40.811279296875, -74.219345092773],
+                        "date": "09-16",
+                        "location": "Montclair",
+                        "url": "https://www.meetup.com/WordPress-Montclair-Meetup/events/tcbcmqyzmbvb/",
+                        // for filtering
+                        "datetime": "2019-09-16 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress Meetup (September 2019)",
+                        "position": [1.2786450386047, 103.84741210938],
+                        "date": "09-16",
+                        "location": "Singapore",
+                        "url": "https://www.meetup.com/WordPress-Singapore/events/264079477/",
+                        // for filtering
+                        "datetime": "2019-09-16 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "An awesome topic TBC",
+                        "position": [-26.017278671265, 28.003927230835],
+                        "date": "09-17",
+                        "location": "Johannesburg",
+                        "url": "https://www.meetup.com/WordPress-Joburg/events/wfctqqyzmbwb/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress Meetup Leipzig - Werkstatt",
+                        "position": [51.332103729248, 12.373519897461],
+                        "date": "09-17",
+                        "location": "Leipzig",
+                        "url": "https://www.meetup.com/Leipzig-WordPress-Meetup/events/257983072/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress Luxembourg | September Meetup | Collaborative Workshop",
+                        "position": [49.608436584473, 6.132050037384],
+                        "date": "09-17",
+                        "location": "Luxembourg",
+                        "url": "https://www.meetup.com/WordPress-Meetup-Luxembourg/events/263478138/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "orange",
+                        "title": "WordPress Meetup Antwerp: URL Rewrite Rules + a WP Q&amp;A",
+                        "position": [51.221538543701, 4.404550075531],
+                        "date": "09-17",
+                        "location": "Antwerpen",
+                        "url": "https://www.meetup.com/Antwerp-WordPress-Meetup/events/264430690/",
+                        // for filtering
+                        "datetime": "2019-09-17 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "incontro WordPress Bari ~ Settembre 2019",
+                        "position": [41.136741638184, 16.837295532227],
+                        "date": "09-18",
+                        "location": "Bari",
+                        "url": "https://www.meetup.com/WordPress-Bari/events/264395934/",
+                        // for filtering
+                        "datetime": "2019-09-18 17:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Intro to the Divi Theme",
+                        "position": [35.597885131836, -82.551300048828],
+                        "date": "09-18",
+                        "location": "Asheville",
+                        "url": "https://www.meetup.com/Asheville-Area-WordPress-Group/events/262976686/",
+                        // for filtering
+                        "datetime": "2019-09-18 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "[North Lakes] Brisbane Northside WordPress Meetup",
+                        "position": [-27.237770080566, 153.02235412598],
+                        "date": "09-18",
+                        "location": "Brisbane",
+                        "url": "https://www.meetup.com/WordPress-Brisbane/events/264486600/",
+                        // for filtering
+                        "datetime": "2019-09-18 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "MWUG Monthly Meetup",
+                        "position": [53.486267089844, -2.2396988868713],
+                        "date": "09-18",
+                        "location": "Manchester",
+                        "url": "https://www.meetup.com/ManchesterWordPressUserGroup/events/szdgfqyzmbxb/",
+                        // for filtering
+                        "datetime": "2019-09-18 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Por qué no tienes visibilidad en Google: descubre qué estás haciendo mal.",
+                        "position": [39.467460632324, -0.37446001172066],
+                        "date": "09-18",
+                        "location": "Valencia",
+                        "url": "https://www.meetup.com/wordpress-valencia-meetup/events/264309259/",
+                        // for filtering
+                        "datetime": "2019-09-18 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Meetup #33: Google Analytics (廣東話 Cantonese)",
+                        "position": [0, 0],
+                        "date": "09-18",
+                        "location": "Kowloon",
+                        "url": "https://www.meetup.com/Hong-Kong-WordPress-Meetup/events/264488621/",
+                        // for filtering
+                        "datetime": "2019-09-18 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Meetup Kaunas #41",
+                        "position": [54.89958190918, 23.9615650177],
+                        "date": "09-19",
+                        "location": "Kaunas",
+                        "url": "https://www.meetup.com/Kaunas-WordPress-Meetup/events/skqkhryzmbzb/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Optimisation sémantique de vos contenus",
+                        "position": [48.879348754883, 2.3459129333496],
+                        "date": "09-19",
+                        "location": "Paris",
+                        "url": "https://www.meetup.com/wordpress-ile-de-france/events/264349950/",
+                        // for filtering
+                        "datetime": "2019-09-19 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Treviso WordPress Meetup 19 settembre 2019",
+                        "position": [45.673049926758, 11.959034919739],
+                        "date": "09-19",
+                        "location": "Castelfranco Veneto",
+                        "url": "https://www.meetup.com/Treviso-WordPress-Meetup/events/262389870/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Beginner Meetup – Schriften und WordPress",
+                        "position": [52.516765594482, 13.390459060669],
+                        "date": "09-19",
+                        "location": "Berlin",
+                        "url": "https://www.meetup.com/Berlin-WordPress-Meetup/events/262956369/",
+                        // for filtering
+                        "datetime": "2019-09-19 19:15",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordCamp Catania 2019",
+                        "position": [37.510063171387, 15.102730751038],
+                        "date": "09-20",
+                        "location": "Catania",
+                        "url": "https://www.meetup.com/Meetup-WordPress-Catania/events/264396857/",
+                        // for filtering
+                        "datetime": "2019-09-20 09:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "GraphQL with React and WordPress",
+                        "position": [18.543369293213, 73.936141967773],
+                        "date": "09-21",
+                        "location": "Pune",
+                        "url": "https://www.meetup.com/Pune-WordPress-Knowledge-Exchange/events/264252479/",
+                        // for filtering
+                        "datetime": "2019-09-21 10:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "27 Meetup WpPuebla ¿Cómo Sacar 100 en Google PageSpeed con WordPress? (o casí)",
+                        "position": [19.040473937988, -98.195037841797],
+                        "date": "09-21",
+                        "location": "Puebla",
+                        "url": "https://www.meetup.com/wppuebla/events/264096246/",
+                        // for filtering
+                        "datetime": "2019-09-21 11:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Brooklyn WordPress Help Desk",
+                        "position": [40.686950683594, -73.985565185547],
+                        "date": "09-21",
+                        "location": "Brooklyn",
+                        "url": "https://www.meetup.com/WordPressNYC/events/rckbrqyzmbcc/",
+                        // for filtering
+                        "datetime": "2019-09-21 13:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "信州 WordPress Meetup in 松本 Vol.16 WordPress とかの色んな話をする会",
+                        "position": [36.234657287598, 137.97105407715],
+                        "date": "09-21",
+                        "location": "Matsumoto, Nagano",
+                        "url": "https://www.meetup.com/Shinshu-WordPress-Meetup/events/264305044/",
+                        // for filtering
+                        "datetime": "2019-09-21 14:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Eldoret Wordpress MeetUp",
+                        "position": [0, 0],
+                        "date": "09-21",
+                        "location": "Eldoret",
+                        "url": "https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbcc/",
+                        // for filtering
+                        "datetime": "2019-09-21 16:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "羽田 WordPress Meetup (2019年9月)",
+                        "position": [35.568435668945, 139.72959899902],
+                        "date": "09-22",
+                        "location": "Tōkyō-to",
+                        "url": "https://www.meetup.com/Tokyo-WordPress-Meetup/events/264081336/",
+                        // for filtering
+                        "datetime": "2019-09-22 11:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress 台中小聚 #15",
+                        "position": [24.147960662842, 120.67350769043],
+                        "date": "09-22",
+                        "location": "Taichung City",
+                        "url": "https://www.meetup.com/Taichung-WordPress-Meetup/events/264515435/",
+                        // for filtering
+                        "datetime": "2019-09-22 14:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Eldoret Wordpress MeetUp",
+                        "position": [0, 0],
+                        "date": "09-23",
+                        "location": "Eldoret",
+                        "url": "https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbfc/",
+                        // for filtering
+                        "datetime": "2019-09-23 16:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Syros 1st Meetup",
+                        "position": [37.440402984619, 24.940299987793],
+                        "date": "09-23",
+                        "location": "Siros Ermoupoli",
+                        "url": "https://www.meetup.com/Athens-WordPress-Meetup/events/263260442/",
+                        // for filtering
+                        "datetime": "2019-09-23 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Not For Profit Websites - Monthly Meetup",
+                        "position": [43.690132141113, -79.293975830078],
+                        "date": "09-24",
+                        "location": "Toronto",
+                        "url": "https://www.meetup.com/WPToronto/events/mrfjhryzmbgc/",
+                        // for filtering
+                        "datetime": "2019-09-24 14:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "September WordPress Meetup",
+                        "position": [55.66780090332, 12.54375743866],
+                        "date": "09-24",
+                        "location": "København",
+                        "url": "https://www.meetup.com/WordPress-Copenhagen/events/264351736/",
+                        // for filtering
+                        "datetime": "2019-09-24 17:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Seminar - September 24, 2019",
+                        "position": [48.436359405518, -123.39725494385],
+                        "date": "09-24",
+                        "location": "Victoria",
+                        "url": "https://www.meetup.com/yyjWordPress/events/264036739/",
+                        // for filtering
+                        "datetime": "2019-09-24 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Meetup september",
+                        "position": [56.452590942383, 9.4080801010132],
+                        "date": "09-24",
+                        "location": "Viborg",
+                        "url": "https://www.meetup.com/WordPress-Meetup-Viborg/events/258066710/",
+                        // for filtering
+                        "datetime": "2019-09-24 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Page Builders -- a user&#039;s perspective",
+                        "position": [55.859180450439, -4.2472968101501],
+                        "date": "09-24",
+                        "location": "Glasgow",
+                        "url": "https://www.meetup.com/Glasgow-WordPress-Meetup/events/264325679/",
+                        // for filtering
+                        "datetime": "2019-09-24 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Meetup Hamburg",
+                        "position": [53.551124572754, 9.9335660934448],
+                        "date": "09-24",
+                        "location": "Hamburg",
+                        "url": "https://www.meetup.com/Hamburg-WordPress-Meetup/events/zjzdhpyzmbgc/",
+                        // for filtering
+                        "datetime": "2019-09-24 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress POA Meetup",
+                        "position": [-30.017881393433, -51.196990966797],
+                        "date": "09-24",
+                        "location": "Porto Alegre",
+                        "url": "https://www.meetup.com/wp-poa/events/kxzmznyzmbgc/",
+                        // for filtering
+                        "datetime": "2019-09-24 19:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordSesh Live stream party",
+                        "position": [51.218864440918, 4.426778793335],
+                        "date": "09-25",
+                        "location": "Antwerpen",
+                        "url": "https://www.meetup.com/Antwerp-WordPress-Meetup/events/264053839/",
+                        // for filtering
+                        "datetime": "2019-09-25 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Co-Meetup met WordPress Antwerp: WordSesh streaming party",
+                        "position": [51.218845367432, 4.4267158508301],
+                        "date": "09-25",
+                        "location": "Antwerpen",
+                        "url": "https://www.meetup.com/Ieper-WordPress-Meetup/events/264053082/",
+                        // for filtering
+                        "datetime": "2019-09-25 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "[Coorparoo] September Coffee catch up - Casual discussions",
+                        "position": [-27.494369506836, 153.05879211426],
+                        "date": "09-25",
+                        "location": "Coorparoo",
+                        "url": "https://www.meetup.com/WordPress-Brisbane/events/264511872/",
+                        // for filtering
+                        "datetime": "2019-09-25 10:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Nashville PHP/WordPress BBQ Lunch",
+                        "position": [36.159385681152, -86.796211242676],
+                        "date": "09-25",
+                        "location": "Nashville",
+                        "url": "https://www.meetup.com/nashvillephp/events/mklnwqyzmbhc/",
+                        // for filtering
+                        "datetime": "2019-09-25 11:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "TBA - Pendiente de anunciar",
+                        "position": [41.386943817139, 2.1716780662537],
+                        "date": "09-25",
+                        "location": "Barcelona",
+                        "url": "https://www.meetup.com/wordpressbcn/events/263549139/",
+                        // for filtering
+                        "datetime": "2019-09-25 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Meetup Sønderborg - 25. september 2019",
+                        "position": [54.911125183105, 9.7853918075562],
+                        "date": "09-25",
+                        "location": "Sønderborg",
+                        "url": "https://www.meetup.com/WordPress-Meetup-Sonderborg/events/257634209/",
+                        // for filtering
+                        "datetime": "2019-09-25 18:45",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "[默默會 + short sessions] WordPress English/Japanese Meetup (Read the description)",
+                        "position": [25.081464767456, 121.56625366211],
+                        "date": "09-25",
+                        "location": "Taipei",
+                        "url": "https://www.meetup.com/Taipei-WordPress/events/264489857/",
+                        // for filtering
+                        "datetime": "2019-09-25 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Lunch and Learn",
+                        "position": [41.497589111328, -71.374084472656],
+                        "date": "09-26",
+                        "location": "Jamestown",
+                        "url": "https://www.meetup.com/WordPressRI/events/mlgnzqyzmbjc/",
+                        // for filtering
+                        "datetime": "2019-09-26 12:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Backups - Verschiedene Wege der Umsetzung",
+                        "position": [46.948257446289, 7.4422578811646],
+                        "date": "09-26",
+                        "location": "Bern",
+                        "url": "https://www.meetup.com/WordPress-Bern/events/vwhkqqyzmbjc/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "September Meetup - Topic TBC",
+                        "position": [-31.955770492554, 115.85907745361],
+                        "date": "09-26",
+                        "location": "Perth",
+                        "url": "https://www.meetup.com/WordPress-Perth/events/264456861/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Meetup N°13: Introducción a Elementor (free) y Copywriting",
+                        "position": [-0.19993199408054, -78.47917175293],
+                        "date": "09-26",
+                        "location": "Quito",
+                        "url": "https://www.meetup.com/WordPress-Quito/events/264053545/",
+                        // for filtering
+                        "datetime": "2019-09-26 18:20",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "wp-config vitaminado: No te conformes con lo que viene por defecto, ¡optimízalo!",
+                        "position": [40.412425994873, -3.7182219028473],
+                        "date": "09-26",
+                        "location": "Madrid",
+                        "url": "https://www.meetup.com/WordPress-Madrid/events/264240093/",
+                        // for filtering
+                        "datetime": "2019-09-26 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "PageBuilders as  PageStylers for a distinct WordPress advantage",
+                        "position": [43.646202087402, -79.559883117676],
+                        "date": "09-26",
+                        "location": "Etobicoke",
+                        "url": "https://www.meetup.com/WPToronto/events/264208903/",
+                        // for filtering
+                        "datetime": "2019-09-26 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "50º Meetup WordPress Curitiba",
+                        "position": [-25.438842773438, -49.272659301758],
+                        "date": "09-26",
+                        "location": "Curitiba",
+                        "url": "https://www.meetup.com/wpcuritiba/events/264215502/",
+                        // for filtering
+                        "datetime": "2019-09-26 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Meetup Berlin",
+                        "position": [52.516765594482, 13.390459060669],
+                        "date": "09-26",
+                        "location": "Berlin",
+                        "url": "https://www.meetup.com/Berlin-WordPress-Meetup/events/gmzjwqyzmbjc/",
+                        // for filtering
+                        "datetime": "2019-09-26 19:15",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Cairo - September 2019 Meetup",
+                        "position": [29.968967437744, 30.954309463501],
+                        "date": "09-27",
+                        "location": "6th of October City",
+                        "url": "https://www.meetup.com/CairoWP/events/264161704/",
+                        // for filtering
+                        "datetime": "2019-09-27 15:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordCamp Vancouver 2019",
+                        "position": [49.282363891602, -123.12135314941],
+                        "date": "09-28",
+                        "location": "Vancouver,",
+                        "url": "https://www.meetup.com/Vancouver-WordPress-Meetup-Group/events/263783015/",
+                        // for filtering
+                        "datetime": "2019-09-28 09:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Eldoret Wordpress MeetUp",
+                        "position": [0, 0],
+                        "date": "09-28",
+                        "location": "Eldoret",
+                        "url": "https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmblc/",
+                        // for filtering
+                        "datetime": "2019-09-28 16:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Eldoret Wordpress MeetUp",
+                        "position": [0, 0],
+                        "date": "09-30",
+                        "location": "Eldoret",
+                        "url": "https://www.meetup.com/Eldoret-WordPress-Meetup/events/vbpmwmyzmbnc/",
+                        // for filtering
+                        "datetime": "2019-09-30 16:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Landing Page Essentials and A/B Testing with Google Optimize",
+                        "position": [-33.872661590576, 151.20446777344],
+                        "date": "09-30",
+                        "location": "Sydney",
+                        "url": "https://www.meetup.com/WordPress-Sydney/events/258916969/",
+                        // for filtering
+                        "datetime": "2019-09-30 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "Bostonwp Meetup",
+                        "position": [42.369937896729, -71.070732116699],
+                        "date": "09-30",
+                        "location": "Cambridge",
+                        "url": "https://www.meetup.com/boston-wordpress-meetup/events/ghbgcryzmbnc/",
+                        // for filtering
+                        "datetime": "2019-09-30 18:30",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Meetup Leipzig - #38 Mit WordPress die Welt retten",
+                        "position": [51.332103729248, 12.373519897461],
+                        "date": "10-01",
+                        "location": "Leipzig",
+                        "url": "https://www.meetup.com/Leipzig-WordPress-Meetup/events/264038181/",
+                        // for filtering
+                        "datetime": "2019-10-01 19:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "October 2019 Meetup",
+                        "position": [45.42936706543, -75.692520141602],
+                        "date": "10-02",
+                        "location": "Ottawa",
+                        "url": "https://www.meetup.com/The-Ottawa-WordPress-Group/events/263939456/",
+                        // for filtering
+                        "datetime": "2019-10-02 18:00",
+                    },
+                                                            
+                                    {
+                        "type": "red",
+                        "title": "WordPress Meetup: [Topic to be announced]",
+                        "position": [60.449764251709, 22.264272689819],
+                        "date": "10-03",
+                        "location": "Turku",
+                        "url": "https://www.meetup.com/Turku-WordPress-Meetup/events/263861847/",
+                        // for filtering
+                        "datetime": "2019-10-03 18:00",
+                    }
+    ];
+
+    var grouped = {};
+
+    var tresholdDate = new Date();
+    // go 2 hours in the future, so the running meetup is discoverable; e.g. when comming late like me :)
+    tresholdDate.setHours(tresholdDate.getHours() - 2);
+    var tresholdDateTime = Date.parse(tresholdDate);
+
+    for (var i in markers) {
+        var marker = markers[i];
+
+        // is in the past?
+        var meetupDateTime = Date.parse(marker.datetime);
+        if (meetupDateTime < tresholdDateTime) {
+            continue;
+        }
+
+        // group meetups in one location
+        if (typeof grouped[marker.location] == 'undefined') {
+            grouped[marker.location] = {
+                type: marker.type,
+                position: marker.position,
+                markers: []
+            };
+        }
+
+        grouped[marker.location].markers.push(marker);
+    }
+
+    var map = L.map('mapid');
+
+    // fit to bounds, so pc and mobile have same content
+    // https://leafletjs.com/reference-1.3.2.html#latlngbounds
+
+    // reconstruction from serialized object is not completely working, so we need to restore it manually
+    var restoreBoundFromString = function(stringBound) {
+        stringBound = stringBound.replace(/%22/g, '"');
+        pastBounds = JSON.parse(stringBound);
+
+        return L.latLngBounds(
+            L.latLng(pastBounds._northEast.lat, pastBounds._northEast.lng),
+            L.latLng(pastBounds._southWest.lat, pastBounds._southWest.lng)
+        );
+    };
+
+    // get url bounds
+    var pastBounds = window.localStorage.getItem('bounds');
+
+    // @see https://stackoverflow.com/a/36444134/1348344
+    var isRefreshed = performance.navigation.type;
+
+    if (get('bounds') && isRefreshed === 0)  {
+        var boundsAsString = get('bounds');
+
+        map.fitBounds(restoreBoundFromString(boundsAsString));
+    } else if (pastBounds) {
+        map.fitBounds(restoreBoundFromString(pastBounds));
+    } else {
+        // default map - the whole world
+        map.setView([25, 0], 2);
+    }
+
+    // ref https://github.com/php-ug/php.ug/issues/221#issuecomment-437917289
+    var restoreDislocation = function(map) {
+        var currentCenter = map.getCenter();
+        if (currentCenter.lng > 300 || currentCenter.lng < -300) {
+            // default map - the whole world
+            alert('Whoa, you fell of the main map! Lets get back to center.');
+            map.setView([25, 0], 2);
+        }
+    };
+
+    restoreDislocation(map);
+
+
+    // store past location when map mooves
+    map.on('moveend', function(e) {
+        var bounds = map.getBounds();
+        // objects needs to serialize, since only string can be saved: https://stackoverflow.com/a/2010948/1348344
+        restoreDislocation(map);
+
+        var boundsAsString = boundsToString(bounds);
+        window.localStorage.setItem('bounds', boundsAsString);
+    });
+
+    // required and nice to have promotion to great tool
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // @see https://stackoverflow.com/a/1199420/1348344
+    String.prototype.truncate = String.prototype.truncate ||
+        function(n){
+            return (this.length > n) ? this.substr(0, n-1) + '&hellip;' : this;
+        };
+
+    for (var i in grouped) {
+        var group = grouped[i];
+
+        let [first] = group.markers;
+        var description = '<div class="text-center mb-3" style="width:450px">📍&nbsp;&nbsp;'
+            + first.location
+            + "</div>";
+
+        for (var j in group.markers) {
+            marker = group.markers[j];
+
+            var url = '<a class="text-bold block text-primary ml-3" href="' + marker.url + '" target="_blank" rel="noreferrer noopener"><strong>' + marker.title.truncate(38) + '</strong></a>';
+
+            description += '<div class="mb-3">'
+                + '📅&nbsp; ' + marker.date
+                + url + '</div>'
+            ;
+        }
+
+        var icon = new L.Icon({
+            iconUrl: icons[group.type],
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34]
+        });
+
+        // width: @see https://stackoverflow.com/a/38007764/1348344
+        L.marker(group.position, { icon: icon }).addTo(map).bindPopup(description, {
+            maxWidth: 450
+        });
+    }
+</script>
+                </div>
+            </div>
+        </div>
+
+        <footer class="pb-5 pt-5 mt-5">
+    <div class="container-fluid">
+        <blockquote class="blockquote text-bigger text-center mb-5">
+            "Meeting people from other countries brings <strong>fresh energy to your coding</strong>,
+            <br>new ideas and valuable feedback."
+        </blockquote>
+
+        <br>
+
+        <h3>How This Works?</h3>
+
+        <p>
+            This website is <strong>regenerated by <a href="https://github.com/TomasVotruba/friendsofphp.org/blob/9de36089966f32a79a3789cba0288a55c0f24ffd/.travis.yml#L28">Travis Cron</a> to <a href="https://github.com/tomasvotruba/friendsofphp.org">Github Pages</a> every 24 hours</strong>, so meetups are always fresh.
+        </p>
+
+        <p>
+            We show <strong>meetups for next 30 days</strong>, so you can <a href="https://www.tomasvotruba.cz/blog/2018/07/23/5-signs-should-never-have-a-talk-abroad/">pick up where to go speak</a> or talks with friends right away.
+        </p>
+
+        <hr class="mt-5 mb-5">
+
+        <p class="text-center">
+            <a href="/groups/" class="btn btn-warning btn-lg">Did we Forget Your Group?</a>
+        </p>
+
+        <br>
+
+        <div class="text-center pt-5">
+            <p class="dim">
+                Made with ❤️ on️ <a href="https://www.statie.org">Statie</a> by ️☕️ and <a href="https://tomasvotruba.com">Tomas Votruba</a>
+                <br>
+                Check <a href="https://github.com/tomasvotruba/friendsofphp.org">the repository on Github</a>
+            </p>
+        </div>
+    </div>
+</footer>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122522291-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122522291-1');
+</script>
+    </body>
+</html>
